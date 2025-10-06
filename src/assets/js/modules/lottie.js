@@ -1,7 +1,7 @@
 import { createLottie } from "../utils/utils.js";
 import selectors from "../selectors/selectors.js";
 
-const genLottiePath = (name) => `/assets/img/lottie/${name}.json`;
+const genLottiePath = (name) => `/deleter/assets/img/lottie/${name}.json`;
 
 const createAnimation = () => {
   createLottie({ container: selectors.lottie_solution, path: genLottiePath("cube-loop-red") });
