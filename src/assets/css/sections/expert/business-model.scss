@@ -1,0 +1,112 @@
+@use "../../utils/mixin" as *;
+@use "../../utils/functions" as *;
+
+.business {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(12);
+  }
+
+  &-info {
+    display: flex;
+
+    @include md {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: spacing(24);
+    padding: spacing(12);
+    padding-top: 0;
+  }
+
+  &_image {
+    flex: 1;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: spacing(12);
+
+    &-text {
+      font-size: spacing(10);
+      font-weight: 600;
+      font-family: var(--font-montserrat), sans-serif;
+    }
+  }
+
+  &-lottie {
+    width: 50%;
+    height: 300px;
+
+    @include md {
+      width: 100%;
+    }
+  }
+}
+
+.statistic {
+  width: 100%;
+  padding: 6px;
+  border: 1px dashed var(--color-black);
+  border-radius: 12px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    padding: spacing(12);
+    background: var(--color-primary);
+    color: white;
+
+    h1 {
+      margin-bottom: 12px;
+      font-family: var(--font-pixelify), cursive;
+      font-size: spacing(24);
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+
+      .text-muted {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    &:first-child {
+      border-right: 1px dashed var(--color-white);
+      border-radius: 12px 0 0 12px;
+
+      @include md {
+        border-right: none;
+        border-bottom: 1px dashed var(--color-white);
+        border-radius: 12px 12px 0 0;
+      }
+    }
+
+    &:last-child {
+      border-left: 1px dashed var(--color-white);
+      border-radius: 0 12px 12px 0;
+
+      @include md {
+        border-left: none;
+        border-top: 1px dashed var(--color-white);
+        border-radius: 0 0 12px 12px;
+      }
+    }
+  }
+}

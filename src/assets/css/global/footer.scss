@@ -1,0 +1,103 @@
+@use "../utils/functions" as *;
+@use "../utils/mixin" as *;
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--text-light);
+  padding: spacing(48) 0;
+
+  @include sm {
+    padding: spacing(16) 0;
+  }
+
+  &-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 spacing(8);
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: spacing(4);
+    padding: spacing(12);
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    p {
+      font-size: spacing(8.5);
+      font-weight: 500;
+    }
+
+    @include sm {
+      padding: spacing(6) spacing(8);
+    }
+  }
+
+  &-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @include sm {
+      justify-content: flex-start;
+    }
+
+    @include xs {
+      flex-direction: column;
+    }
+
+    &_item {
+      flex: 1 1 25%;
+      max-width: 170px;
+      padding: spacing(12);
+
+      &.first-column {
+        flex-grow: 2;
+        max-width: 283px;
+      }
+
+      @include md {
+        max-width: 170px;
+        flex: 1;
+      }
+
+      @include sm {
+        padding: spacing(8);
+      }
+
+      &-title {
+        color: var(--color-white);
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--font-montserrat), sans-serif;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: spacing(6);
+
+        li {
+          transition: color 0.3s ease;
+          font-size: spacing(7.5);
+          font-weight: 300;
+
+          &:hover {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    padding: spacing(12);
+    color: var(--color-white);
+    font-size: 14px;
+
+    @include sm {
+      padding: spacing(8) 0 0 spacing(8);
+    }
+  }
+}

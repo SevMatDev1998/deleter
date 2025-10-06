@@ -1,0 +1,4 @@
+npm run build &&
+echo "✅ Build successful!" &&
+git add . &&
+echo "✅ Added successful!"

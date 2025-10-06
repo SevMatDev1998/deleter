@@ -1,0 +1,3401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IT Build</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="IT Build — платформа цифровых решений для специалистов и компаний. Упрощаем процессы, ускоряем рост."
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="72x72"
+      href="/assets/icons/favicon-72x72.ico"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="IT Build" />
+    <meta
+      property="og:description"
+      content="IT Build — платформа цифровых решений для специалистов и компаний. Упрощаем процессы, ускоряем рост."
+    />
+    <meta property="og:url" content="https://itbuild.app/" />
+    <meta property="og:site_name" content="itbuild" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://itbuild.app/mini-app.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mini App" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="IT Build" />
+    <meta
+      name="twitter:description"
+      content="IT Build — платформа цифровых решений для специалистов и компаний. Упрощаем процессы, ускоряем рост."
+    />
+    <meta name="twitter:image" content="https://itbuild.app/mini-app.png" />
+    <meta name="twitter:image:alt" content="Mini App" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="/assets/css/preload.min.css" />
+    <link
+      rel="preload"
+      href="/assets/lib/css/splide.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/lib/css/splide.min.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="/assets/css/main.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/main.min.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="/assets/css/customers.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/customers.min.css" />
+    </noscript>
+
+    <!-- Scripts -->
+    <script src="/assets/js/prerender.js"></script>
+    <script src="/assets/lib/js/splide.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <!-- Preload Start -->
+    <div id="preloader" role="status">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="200"
+        width="200"
+        class="loader"
+      >
+        <g style="order: -1">
+          <polygon
+            transform="rotate(45 100 100)"
+            stroke-width="1"
+            stroke="#d3a410"
+            fill="none"
+            points="70,70 148,50 130,130 50,150"
+            id="bounce"
+          ></polygon>
+          <polygon
+            transform="rotate(45 100 100)"
+            stroke-width="1"
+            stroke="#d3a410"
+            fill="none"
+            points="70,70 148,50 130,130 50,150"
+            id="bounce2"
+          ></polygon>
+          <polygon
+            transform="rotate(45 100 100)"
+            stroke-width="2"
+            stroke=""
+            fill="#414750"
+            points="70,70 150,50 130,130 50,150"
+          ></polygon>
+          <polygon
+            stroke-width="2"
+            stroke=""
+            fill="url(#gradiente)"
+            points="100,70 150,100 100,130 50,100"
+          ></polygon>
+          <defs>
+            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+              <stop
+                style="stop-color: #1e2026; stop-opacity: 1"
+                offset="20%"
+              ></stop>
+              <stop
+                style="stop-color: #414750; stop-opacity: 1"
+                offset="60%"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <polygon
+            transform="translate(20, 31)"
+            stroke-width="2"
+            stroke=""
+            fill="#b7870f"
+            points="80,50 80,75 80,99 40,75"
+          ></polygon>
+          <polygon
+            transform="translate(20, 31)"
+            stroke-width="2"
+            stroke=""
+            fill="url(#gradiente2)"
+            points="40,-40 80,-40 80,99 40,75"
+          ></polygon>
+          <defs>
+            <linearGradient
+              y2="100%"
+              x2="0%"
+              y1="-17%"
+              x1="10%"
+              id="gradiente2"
+            >
+              <stop
+                style="stop-color: #d3a51000; stop-opacity: 1"
+                offset="20%"
+              ></stop>
+              <stop
+                style="stop-color: #d3a51054; stop-opacity: 1"
+                offset="100%"
+                id="animatedStop"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <polygon
+            transform="rotate(180 100 100) translate(20, 20)"
+            stroke-width="2"
+            stroke=""
+            fill="#d3a410"
+            points="80,50 80,75 80,99 40,75"
+          ></polygon>
+          <polygon
+            transform="rotate(0 100 100) translate(60, 20)"
+            stroke-width="2"
+            stroke=""
+            fill="url(#gradiente3)"
+            points="40,-40 80,-40 80,85 40,110.2"
+          ></polygon>
+          <defs>
+            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+              <stop
+                style="stop-color: #d3a51000; stop-opacity: 1"
+                offset="20%"
+              ></stop>
+              <stop
+                style="stop-color: #d3a51054; stop-opacity: 1"
+                offset="100%"
+                id="animatedStop"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <polygon
+            transform="rotate(45 100 100) translate(80, 95)"
+            stroke-width="2"
+            stroke=""
+            fill="#ffe4a1"
+            points="5,0 5,5 0,5 0,0"
+            id="particles"
+          ></polygon>
+          <polygon
+            transform="rotate(45 100 100) translate(80, 55)"
+            stroke-width="2"
+            stroke=""
+            fill="#ccb069"
+            points="6,0 6,6 0,6 0,0"
+            id="particles"
+          ></polygon>
+          <polygon
+            transform="rotate(45 100 100) translate(70, 80)"
+            stroke-width="2"
+            stroke=""
+            fill="#fff"
+            points="2,0 2,2 0,2 0,0"
+            id="particles"
+          ></polygon>
+          <polygon
+            stroke-width="2"
+            stroke=""
+            fill="#292d34"
+            points="29.5,99.8 100,142 100,172 29.5,130"
+          ></polygon>
+          <polygon
+            transform="translate(50, 92)"
+            stroke-width="2"
+            stroke=""
+            fill="#1f2127"
+            points="50,50 120.5,8 120.5,35 50,80"
+          ></polygon>
+        </g>
+      </svg>
+      <span class="sr-only">Loading...</span>
+    </div>
+    <!-- Preload End -->
+    <!-- Header Start -->
+    <header class="header">
+      <div class="header_inner">
+        <div class="header_logo">
+          <a href="/ru/" aria-label="hero">
+            <svg
+              width="24"
+              height="28"
+              viewBox="0 0 24 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0.799988V24.8V27.2H2.4H21.6H24V24.8V10.4V7.99999H21.6H12H9.6V10.4V17.6H14.4V12.8H19.2V22.4H4.8V0.799988H0Z"
+                fill="#1F1F1F"
+              />
+              <path
+                d="M9.59985 5.59999V0.799988H14.3999V5.59999H9.59985Z"
+                fill="#EE585A"
+              />
+            </svg>
+            <span>it build</span>
+          </a>
+        </div>
+        <nav class="header_navigation">
+          <ul class="header_navigation_list">
+            <li>
+              <div class="header_navigation_list-solutions">
+                <label
+                  for="solution"
+                  class="link-hover active header_navigation_list-solutions_button"
+                  aria-haspopup="true"
+                  aria-controls="solutions-menu"
+                  aria-label="Toggle Solutions menu"
+                  tabindex="0"
+                >
+                  Клиенты
+                  <svg
+                    width="12"
+                    height="7"
+                    viewBox="0 0 12 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0726 0.317936C10.364 0.0274762 10.8356 0.0278959 11.1266 0.318874C11.4178 0.610146 11.4177 1.08232 11.1265 1.37356L6.70717 5.79289C6.31664 6.18342 5.68348 6.18342 5.29295 5.79289L0.873621 1.37356C0.582385 1.08232 0.582356 0.610144 0.873559 0.318873C1.16447 0.027895 1.63607 0.0274754 1.9275 0.317936L6.00006 4.377 10.0726 0.317936Z"
+                      fill="black"
+                    />
+                  </svg>
+                </label>
+                <input type="checkbox" name="solution" id="solution" hidden />
+                <div
+                  id="solutions-menu"
+                  class="header_navigation_list-solutions_menu"
+                >
+                  <ul
+                    role="menu"
+                    class="header_navigation_list-solutions_menu_list"
+                  >
+                    <li role="menuitem">
+                      <a href="/ru/">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 30 30"
+                          width="30"
+                          height="30"
+                        >
+                          <rect
+                            width="30"
+                            height="30"
+                            fill="#F0F0F0"
+                            rx="4"
+                          ></rect>
+                          <path
+                            fill="#1F1F1F"
+                            d="M9.375 5.625h3.75v3.75h-3.75zM16.875 5.625h3.75v3.75h-3.75zM5.625 9.375h3.75v3.75h-3.75zM20.625 9.375h3.75v3.75h-3.75zM5.625 16.875h3.75v3.75h-3.75zM20.625 16.875h3.75v3.75h-3.75zM9.375 20.625h3.75v3.75h-3.75zM16.875 20.625h3.75v3.75h-3.75zM18.125 15a3.125 3.125 0 1 1-6.25 0 3.125 3.125 0 0 1 6.25 0"
+                          ></path>
+                        </svg>
+                        <span>Перейти на главную</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="/ru/specialists">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 30 30"
+                          width="30"
+                          height="30"
+                        >
+                          <rect
+                            width="30"
+                            height="30"
+                            fill="#F0F0F0"
+                            rx="4"
+                          ></rect>
+                          <path
+                            fill="#1F1F1F"
+                            fill-rule="evenodd"
+                            d="M13.438 7.718v4.464L9.53 14.414l-3.906-2.232V7.717l3.906-2.092zm-3.594 2.299v3.858L13.125 12V8.083zM6.263 7.73l3.421 2.017 3.277-1.93-3.43-1.838zM24.375 7.718v4.464l-3.906 2.232-3.907-2.232V7.717l3.907-2.092zm-3.594 2.299v3.858L24.063 12V8.083zm-3.58-2.287 3.42 2.017 3.277-1.93-3.43-1.838zM18.906 17.676v4.464L15 24.372l-3.906-2.232v-4.465L15 15.583zm-3.593 2.298v3.859l3.28-1.875V18.04zm-3.581-2.286 3.421 2.017 3.277-1.93L15 15.937z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+
+                        <span>Для специалистов</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="/ru/expert">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 30 30"
+                          width="30"
+                          height="30"
+                        >
+                          <rect
+                            width="30"
+                            height="30"
+                            fill="#F0F0F0"
+                            rx="4"
+                          ></rect>
+                          <path
+                            fill="#1F1F1F"
+                            d="m10 16.925 6.667 3.848-3.334-9.622z"
+                          ></path>
+                          <path
+                            stroke="#1F1F1F"
+                            stroke-width="0.625"
+                            d="m19.62 18.707-2.782 1.606-3.125-9.021 2.781-1.606zm-3.524 1.376-5.67-3.273 2.836-4.912z"
+                          ></path>
+                          <path
+                            fill="#1F1F1F"
+                            d="M24.375 15a9.375 9.375 0 1 1-18.75 0 9.375 9.375 0 1 1 18.75 0m-17.73 0a8.356 8.356 0 1 0 16.71 0 8.356 8.356 0 0 0-16.71 0"
+                          ></path>
+                        </svg>
+                        <span>Для агентов и экспертов</span>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#">Нужна помощь? </a>
+                    </li>
+                  </ul>
+                  <div class="header_navigation_list-solutions_menu_faq">
+                    <img src="/assets/img/plus-bg.png" alt="plus-bg" />
+                    <div
+                      class="header_navigation_list-solutions_menu_faq_container"
+                    >
+                      <div id="lottie-solution"></div>
+                      <button class="arrow-button">
+                        Take a look at our FAQs
+                        <svg
+                          class="arrow-button_icon"
+                          width="28"
+                          height="28"
+                          viewBox="0 0 28 28"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="28"
+                            height="28"
+                            rx="14"
+                            fill="#1F1F1F"
+                            fill-opacity="0.05"
+                          />
+                          <rect
+                            x="0.5"
+                            y="0.5"
+                            width="27"
+                            height="27"
+                            rx="13.5"
+                            stroke="#1F1F1F"
+                            stroke-opacity="0.3"
+                          />
+                          <path
+                            d="M18.1121 10.7945L9.36167 19.5449C9.21141 19.6952 9.03493 19.7706 8.83223 19.7712C8.62952 19.7718 8.45348 19.6974 8.30411 19.548C8.15473 19.3986 8.0793 19.2216 8.07783 19.0168C8.07636 18.812 8.15075 18.6345 8.30101 18.4842L17.0515 9.7338L12.5663 9.73292C12.3548 9.73351 12.1778 9.6626 12.0354 9.5202C11.893 9.37779 11.8218 9.19856 11.8218 8.9825C11.8218 8.76644 11.893 8.58721 12.0354 8.4448C12.1778 8.3024 12.3571 8.2312 12.5731 8.2312L18.8782 8.2312C18.9803 8.23513 19.0746 8.25575 19.161 8.29307C19.2474 8.33039 19.326 8.38441 19.3967 8.45512C19.4674 8.52583 19.5214 8.6044 19.5587 8.69082C19.5961 8.77724 19.6147 8.86956 19.6147 8.96777V15.2728C19.6147 15.4889 19.5435 15.6632 19.4011 15.7958C19.2587 15.9284 19.0818 15.997 18.8705 16.0017C18.6497 15.997 18.4673 15.9226 18.3232 15.7785C18.1792 15.6346 18.1089 15.4562 18.1121 15.2433L18.1121 10.7945Z"
+                            fill="#EE585A"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="link-hover" href="#benefits">Ключевые преимущества</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#points">Проблемы</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#how-it-works">Как это работает</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#support">Поддержка</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-mobile">
+          <button
+            id="mobile-menu-open"
+            aria-label="Mobile menu"
+            aria-controls="mobile-menu"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="icon-button"
+          >
+            <svg
+              width="18"
+              height="10"
+              viewBox="0 0 18 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 8.5H17M1 1.5H17"
+                stroke="#1F1F1F"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div id="mobile-menu" class="header-mobile_menu">
+            <div class="header-mobile_menu_close">
+              <button
+                id="mobile-menu-close"
+                aria-label="Close main menu"
+                aria-controls="mobile-menu"
+                aria-haspopup="true"
+                class="icon-button"
+              >
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.21967 13.1871C0.512563 13.4799 0.987437 13.4799 1.28033 13.1871L6.40685 8.06053L11.5334 13.1871C11.8263 13.4799 12.3011 13.4799 12.594 13.1871C12.8869 12.8942 12.8869 12.4193 12.594 12.1264L7.46751 6.99987L12.594 1.87335C12.8869 1.58045 12.8869 1.10558 12.594 0.812687C12.3011 0.519794 11.8263 0.519794 11.5334 0.812687L6.40685 5.93921L1.28033 0.812687C0.987437 0.519794 0.512563 0.519794 0.21967 0.812687C-0.0732233 1.10558 -0.0732233 1.58045 0.21967 1.87335L5.34619 6.99987L0.21967 12.1264C-0.0732233 12.4193 -0.0732233 12.8942 0.21967 13.1871Z"
+                    fill="#1F1F1F"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              aria-label="Mobile main menu"
+              class="header-mobile_menu_content"
+            >
+              <nav class="header-mobile_menu_content_nav">
+                <div class="header-mobile_menu_content_nav_item">
+                  <a href="#benefits" class="link-hover active"
+                    >Ключевые преимущества</a
+                  >
+                  <a href="#points" class="link-hover active">Проблемы</a>
+                  <a href="#how-it-works" class="link-hover active"
+                    >Как это работает</a
+                  >
+                  <a href="#support" class="link-hover active">Поддержка</a>
+                </div>
+                <div class="divider"></div>
+                <div
+                  class="header-mobile_menu_content_nav_item header-mobile_menu_content_nav_item--secondary"
+                >
+                  <a href="/ru/" class="link-hover active">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="30"
+                        height="30"
+                        rx="4"
+                        fill="#1F1F1F"
+                        fill-opacity="0.1"
+                      />
+                      <path
+                        d="M9.375 5.625H13.125V9.375H9.375V5.625Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M16.875 5.625H20.625V9.375H16.875V5.625Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M5.625 9.375H9.375V13.125H5.625V9.375Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M20.625 9.375H24.375V13.125H20.625V9.375Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M5.625 16.875H9.375V20.625H5.625V16.875Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M20.625 16.875H24.375V20.625H20.625V16.875Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M9.375 20.625H13.125V24.375H9.375V20.625Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M16.875 20.625H20.625V24.375H16.875V20.625Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M18.125 15C18.125 16.7259 16.7259 18.125 15 18.125C13.2741 18.125 11.875 16.7259 11.875 15C11.875 13.2741 13.2741 11.875 15 11.875C16.7259 11.875 18.125 13.2741 18.125 15Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    Перейти на главную
+                  </a>
+                  <a href="/ru/specialists" class="link-hover active">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="30"
+                        height="30"
+                        rx="4"
+                        fill="#1F1F1F"
+                        fill-opacity="0.1"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.4375 7.7179V12.182L9.53125 14.4141L5.625 12.182V7.71729L9.53125 5.625L13.4375 7.7179ZM9.84375 10.0165V13.8751L13.125 12.0001V8.08289L9.84375 10.0165ZM6.26282 7.7301L9.68445 9.74731L12.9608 7.81677L9.53125 5.979L6.26282 7.7301Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.375 7.7179V12.182L20.4688 14.4141L16.5625 12.182V7.71729L20.4688 5.625L24.375 7.7179ZM20.7812 10.0165V13.8751L24.0625 12.0001V8.08289L20.7812 10.0165ZM17.2003 7.7301L20.6219 9.74731L23.8983 7.81677L20.4688 5.979L17.2003 7.7301Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9062 17.6757V22.1398L15 24.3719L11.0938 22.1398V17.6751L15 15.5828L18.9062 17.6757ZM15.3125 19.9743V23.8329L18.5938 21.9579V18.0407L15.3125 19.9743ZM11.7316 17.6879L15.1532 19.7051L18.4296 17.7746L15 15.9368L11.7316 17.6879Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    Для специалистов
+                  </a>
+                  <a href="/ru/expert" class="link-hover active">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="30"
+                        height="30"
+                        rx="4"
+                        fill="#1F1F1F"
+                        fill-opacity="0.1"
+                      />
+                      <path
+                        d="M10 16.9245L16.6667 20.7735L13.3333 11.151L10 16.9245Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M19.6201 18.707L16.8379 20.3134L13.7129 11.2919L16.4941 9.68646L19.6201 18.707ZM16.0957 20.0829L10.4258 16.8095L13.2617 11.8984L16.0957 20.0829Z"
+                        stroke="#1F1F1F"
+                        stroke-width="0.625"
+                      />
+                      <path
+                        d="M24.375 15C24.375 20.1777 20.1777 24.375 15 24.375C9.82233 24.375 5.625 20.1777 5.625 15C5.625 9.82233 9.82233 5.625 15 5.625C20.1777 5.625 24.375 9.82233 24.375 15ZM6.64448 15C6.64448 19.6146 10.3854 23.3555 15 23.3555C19.6146 23.3555 23.3555 19.6146 23.3555 15C23.3555 10.3854 19.6146 6.64448 15 6.64448C10.3854 6.64448 6.64448 10.3854 6.64448 15Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    Для агентов и экспертов
+                  </a>
+                </div>
+                <div class="divider"></div>
+                <div
+                  class="header-mobile_menu_content_nav_item header-mobile_menu_content_nav_item--social"
+                >
+                  <div>
+                    <button
+                      aria-label="Telegram"
+                      class="icon-button link-hover active"
+                    >
+                      <svg
+                        width="22"
+                        height="18"
+                        viewBox="0 0 22 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M18.9661 0.532504C19.2132 0.428495 19.4837 0.392623 19.7494 0.428621C20.0151 0.46462 20.2663 0.571173 20.4768 0.737189C20.6873 0.903206 20.8495 1.12262 20.9465 1.37259C21.0434 1.62256 21.0716 1.89394 21.0281 2.1585L18.7601 15.9155C18.5401 17.2425 17.0841 18.0035 15.8671 17.3425C14.8491 16.7895 13.3371 15.9375 11.9771 15.0485C11.2971 14.6035 9.21411 13.1785 9.47011 12.1645C9.69011 11.2975 13.1901 8.0395 15.1901 6.1025C15.9751 5.3415 15.6171 4.9025 14.6901 5.6025C12.3881 7.3405 8.69211 9.9835 7.47011 10.7275C6.39211 11.3835 5.83011 11.4955 5.15811 11.3835C3.93211 11.1795 2.79511 10.8635 1.86711 10.4785C0.613107 9.95851 0.674107 8.2345 1.86611 7.7325L18.9661 0.532504Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      aria-label="Facebook"
+                      class="icon-button link-hover active"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.5 19.9442C16.311 19.2202 20 15.0692 20 10.0562C20 4.53315 15.523 0.0561523 10 0.0561523C4.477 0.0561523 0 4.53315 0 10.0562C0 15.0692 3.689 19.2212 8.5 19.9442V13.0562H7C6.60218 13.0562 6.22064 12.8981 5.93934 12.6168C5.65804 12.3355 5.5 11.954 5.5 11.5562C5.5 11.1583 5.65804 10.7768 5.93934 10.4955C6.22064 10.2142 6.60218 10.0562 7 10.0562H8.5V8.05615C8.5 7.12789 8.86875 6.23766 9.52513 5.58128C10.1815 4.9249 11.0717 4.55615 12 4.55615H12.5C12.8978 4.55615 13.2794 4.71419 13.5607 4.99549C13.842 5.2768 14 5.65833 14 6.05615C14 6.45398 13.842 6.83551 13.5607 7.11681C13.2794 7.39812 12.8978 7.55615 12.5 7.55615H12C11.8674 7.55615 11.7402 7.60883 11.6464 7.7026C11.5527 7.79637 11.5 7.92354 11.5 8.05615V10.0562H13C13.3978 10.0562 13.7794 10.2142 14.0607 10.4955C14.342 10.7768 14.5 11.1583 14.5 11.5562C14.5 11.954 14.342 12.3355 14.0607 12.6168C13.7794 12.8981 13.3978 13.0562 13 13.0562H11.5V19.9442Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      aria-label="Linkedin"
+                      class="icon-button link-hover active"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15 0C15.7956 0 16.5587 0.316071 17.1213 0.87868C17.6839 1.44129 18 2.20435 18 3V15C18 15.7956 17.6839 16.5587 17.1213 17.1213C16.5587 17.6839 15.7956 18 15 18H3C2.20435 18 1.44129 17.6839 0.87868 17.1213C0.316071 16.5587 0 15.7956 0 15V3C0 2.20435 0.316071 1.44129 0.87868 0.87868C1.44129 0.316071 2.20435 0 3 0H15ZM5 7C4.73478 7 4.48043 7.10536 4.29289 7.29289C4.10536 7.48043 4 7.73478 4 8V13C4 13.2652 4.10536 13.5196 4.29289 13.7071C4.48043 13.8946 4.73478 14 5 14C5.26522 14 5.51957 13.8946 5.70711 13.7071C5.89464 13.5196 6 13.2652 6 13V8C6 7.73478 5.89464 7.48043 5.70711 7.29289C5.51957 7.10536 5.26522 7 5 7ZM8 6C7.73478 6 7.48043 6.10536 7.29289 6.29289C7.10536 6.48043 7 6.73478 7 7V13C7 13.2652 7.10536 13.5196 7.29289 13.7071C7.48043 13.8946 7.73478 14 8 14C8.26522 14 8.51957 13.8946 8.70711 13.7071C8.89464 13.5196 9 13.2652 9 13V9.34C9.305 8.996 9.82 8.592 10.393 8.347C10.726 8.205 11.227 8.147 11.575 8.257C11.6904 8.28629 11.7933 8.35226 11.868 8.445C11.92 8.515 12 8.671 12 9V13C12 13.2652 12.1054 13.5196 12.2929 13.7071C12.4804 13.8946 12.7348 14 13 14C13.2652 14 13.5196 13.8946 13.7071 13.7071C13.8946 13.5196 14 13.2652 14 13V9C14 8.33 13.83 7.734 13.476 7.256C13.1503 6.82256 12.6944 6.50472 12.175 6.349C11.273 6.066 10.274 6.223 9.607 6.509C9.39329 6.60046 9.18525 6.70465 8.984 6.821C8.94208 6.59059 8.82062 6.3822 8.6408 6.23216C8.46097 6.08213 8.23419 5.99996 8 6ZM5 4C4.73478 4 4.48043 4.10536 4.29289 4.29289C4.10536 4.48043 4 4.73478 4 5C4 5.26522 4.10536 5.51957 4.29289 5.70711C4.48043 5.89464 4.73478 6 5 6C5.26522 6 5.51957 5.89464 5.70711 5.70711C5.89464 5.51957 6 5.26522 6 5C6 4.73478 5.89464 4.48043 5.70711 4.29289C5.51957 4.10536 5.26522 4 5 4Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header_social">
+          <button aria-label="Telegram" class="icon-button link-hover">
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.9661 0.532504C19.2132 0.428495 19.4837 0.392623 19.7494 0.428621C20.0151 0.46462 20.2663 0.571173 20.4768 0.737189C20.6873 0.903206 20.8495 1.12262 20.9465 1.37259C21.0434 1.62256 21.0716 1.89394 21.0281 2.1585L18.7601 15.9155C18.5401 17.2425 17.0841 18.0035 15.8671 17.3425C14.8491 16.7895 13.3371 15.9375 11.9771 15.0485C11.2971 14.6035 9.21411 13.1785 9.47011 12.1645C9.69011 11.2975 13.1901 8.0395 15.1901 6.1025C15.9751 5.3415 15.6171 4.9025 14.6901 5.6025C12.3881 7.3405 8.69211 9.9835 7.47011 10.7275C6.39211 11.3835 5.83011 11.4955 5.15811 11.3835C3.93211 11.1795 2.79511 10.8635 1.86711 10.4785C0.613107 9.95851 0.674107 8.2345 1.86611 7.7325L18.9661 0.532504Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button aria-label="Facebook" class="icon-button link-hover">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.5 19.9442C16.311 19.2202 20 15.0692 20 10.0562C20 4.53315 15.523 0.0561523 10 0.0561523C4.477 0.0561523 0 4.53315 0 10.0562C0 15.0692 3.689 19.2212 8.5 19.9442V13.0562H7C6.60218 13.0562 6.22064 12.8981 5.93934 12.6168C5.65804 12.3355 5.5 11.954 5.5 11.5562C5.5 11.1583 5.65804 10.7768 5.93934 10.4955C6.22064 10.2142 6.60218 10.0562 7 10.0562H8.5V8.05615C8.5 7.12789 8.86875 6.23766 9.52513 5.58128C10.1815 4.9249 11.0717 4.55615 12 4.55615H12.5C12.8978 4.55615 13.2794 4.71419 13.5607 4.99549C13.842 5.2768 14 5.65833 14 6.05615C14 6.45398 13.842 6.83551 13.5607 7.11681C13.2794 7.39812 12.8978 7.55615 12.5 7.55615H12C11.8674 7.55615 11.7402 7.60883 11.6464 7.7026C11.5527 7.79637 11.5 7.92354 11.5 8.05615V10.0562H13C13.3978 10.0562 13.7794 10.2142 14.0607 10.4955C14.342 10.7768 14.5 11.1583 14.5 11.5562C14.5 11.954 14.342 12.3355 14.0607 12.6168C13.7794 12.8981 13.3978 13.0562 13 13.0562H11.5V19.9442Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button aria-label="Linkedin" class="icon-button link-hover">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0C15.7956 0 16.5587 0.316071 17.1213 0.87868C17.6839 1.44129 18 2.20435 18 3V15C18 15.7956 17.6839 16.5587 17.1213 17.1213C16.5587 17.6839 15.7956 18 15 18H3C2.20435 18 1.44129 17.6839 0.87868 17.1213C0.316071 16.5587 0 15.7956 0 15V3C0 2.20435 0.316071 1.44129 0.87868 0.87868C1.44129 0.316071 2.20435 0 3 0H15ZM5 7C4.73478 7 4.48043 7.10536 4.29289 7.29289C4.10536 7.48043 4 7.73478 4 8V13C4 13.2652 4.10536 13.5196 4.29289 13.7071C4.48043 13.8946 4.73478 14 5 14C5.26522 14 5.51957 13.8946 5.70711 13.7071C5.89464 13.5196 6 13.2652 6 13V8C6 7.73478 5.89464 7.48043 5.70711 7.29289C5.51957 7.10536 5.26522 7 5 7ZM8 6C7.73478 6 7.48043 6.10536 7.29289 6.29289C7.10536 6.48043 7 6.73478 7 7V13C7 13.2652 7.10536 13.5196 7.29289 13.7071C7.48043 13.8946 7.73478 14 8 14C8.26522 14 8.51957 13.8946 8.70711 13.7071C8.89464 13.5196 9 13.2652 9 13V9.34C9.305 8.996 9.82 8.592 10.393 8.347C10.726 8.205 11.227 8.147 11.575 8.257C11.6904 8.28629 11.7933 8.35226 11.868 8.445C11.92 8.515 12 8.671 12 9V13C12 13.2652 12.1054 13.5196 12.2929 13.7071C12.4804 13.8946 12.7348 14 13 14C13.2652 14 13.5196 13.8946 13.7071 13.7071C13.8946 13.5196 14 13.2652 14 13V9C14 8.33 13.83 7.734 13.476 7.256C13.1503 6.82256 12.6944 6.50472 12.175 6.349C11.273 6.066 10.274 6.223 9.607 6.509C9.39329 6.60046 9.18525 6.70465 8.984 6.821C8.94208 6.59059 8.82062 6.3822 8.6408 6.23216C8.46097 6.08213 8.23419 5.99996 8 6ZM5 4C4.73478 4 4.48043 4.10536 4.29289 4.29289C4.10536 4.48043 4 4.73478 4 5C4 5.26522 4.10536 5.51957 4.29289 5.70711C4.48043 5.89464 4.73478 6 5 6C5.26522 6 5.51957 5.89464 5.70711 5.70711C5.89464 5.51957 6 5.26522 6 5C6 4.73478 5.89464 4.48043 5.70711 4.29289C5.51957 4.10536 5.26522 4 5 4Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Hero Start -->
+      <section id="hero" class="section section--hero">
+        <div class="hero-content">
+          <div class="hero-content_left">
+            <div class="hero-content_left_header">
+              <div class="hero-content_left_header_title">
+                <h1>Организуйте автоматизацию бизнеса с IT BUILD</h1>
+                <p class="hero-subtitle">Шаблоны, контроль проектов, экспертная поддержка и встроенная безопасность</p>
+              </div>
+              <div class="hero-content_left_header_image">
+                <img
+                  src="/assets/img/image/hero-customers.png"
+                  alt="hero-customers"
+                />
+              </div>
+            </div>
+            <button class="brand-button">Начать проект</button>
+          </div>
+          <div class="hero-content_right">
+            <img
+              src="/assets/img/image/hero-customers.png"
+              alt="hero-customers"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+      <!-- Key Benefits Start -->
+      <section id="benefits" class="section section--base">
+        <div class="section_wrapper section_wrapper--base">
+          <div class="section_title">
+            <h2>Ключевые преимущества</h2>
+            <div class="section_title_line"></div>
+          </div>
+          <div class="key_benefits-content">
+            <div class="key_benefits-content_left">
+              <article class="key_benefits-content_left_item">
+                <div class="key_benefits-content_left_item_header">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="48"
+                      height="48"
+                      rx="12"
+                      stroke="#1F1F1F"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M37 5C41.4183 5 45 8.58172 45 13V37C45 41.4183 41.4183 45 37 45H13C8.58172 45 5 41.4183 5 37V13C5 8.58172 8.58172 5 13 5H37ZM29.1143 13.8311C29.5696 12.6383 28.3272 12.0013 27.543 12.9785L17.2988 25.6484C17.1006 25.8974 17 26.1307 17 26.3857C17.0001 26.843 17.3527 27.1786 17.8389 27.1787H24.1934L20.8545 36.165C20.4011 37.3597 21.6416 37.9969 22.4258 37.0264L32.6699 24.3496C32.868 24.1076 32.9688 23.8763 32.9688 23.6123C32.9687 23.1621 32.6159 22.8176 32.1299 22.8174H25.7754L29.1143 13.8311Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <div class="key_benefits-content_left_item_header_title">
+                    <h3>Быстрый старт</h3>
+                    <p>Готовые шаблоны и модули для быстрого запуска</p>
+                  </div>
+                </div>
+                <p>Готовые шаблоны и модули для быстрого запуска</p>
+              </article>
+              <article class="key_benefits-content_left_item">
+                <div class="key_benefits-content_left_item_header">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="48"
+                      height="48"
+                      rx="12"
+                      stroke="#1F1F1F"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M23.5 28.0293H22V22.0293H23.5V28.0293Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.5 28.0293H31V22.0293H32.5V28.0293Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M37 16.0293V34.0293H13V16.0293H37ZM14.5 31.0293H17.5V19.0293H14.5V31.0293ZM20.5 19.0293C20.075 19.0293 19.7191 19.1734 19.4316 19.4609C19.1441 19.7484 19 20.1043 19 20.5293V29.5293C19 29.9543 19.1441 30.3102 19.4316 30.5977C19.7191 30.8852 20.075 31.0293 20.5 31.0293H25C25.425 31.0293 25.7809 30.8852 26.0684 30.5977C26.3559 30.3102 26.5 29.9543 26.5 29.5293V20.5293C26.5 20.1043 26.3559 19.7484 26.0684 19.4609C25.7809 19.1734 25.425 19.0293 25 19.0293H20.5ZM29.5 19.0293C29.075 19.0293 28.7191 19.1734 28.4316 19.4609C28.1441 19.7484 28 20.1043 28 20.5293V29.5293C28 29.9543 28.1441 30.3102 28.4316 30.5977C28.7191 30.8852 29.075 31.0293 29.5 31.0293H34C34.425 31.0293 34.7809 30.8852 35.0684 30.5977C35.3559 30.3102 35.5 29.9543 35.5 29.5293V20.5293C35.5 20.1043 35.3559 19.7484 35.0684 19.4609C34.7809 19.1734 34.425 19.0293 34 19.0293H29.5Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M37 5C41.4183 5 45 8.58172 45 13V37C45 41.4183 41.4183 45 37 45H13C8.58172 45 5 41.4183 5 37V13C5 8.58172 8.58172 5 13 5H37ZM11 13.0293C10.4477 13.0293 10 13.477 10 14.0293V36.0293C10 36.5816 10.4477 37.0293 11 37.0293H39C39.5523 37.0293 40 36.5816 40 36.0293V14.0293C40 13.477 39.5523 13.0293 39 13.0293H11Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <div class="key_benefits-content_left_item_header_title">
+                    <h3>Экономия бюджета</h3>
+                    <p>Сэкономьте средства с помощью готовых компонентов и конкурентных ставок разработчиков, обеспеченных системой эскроу с локальным балансом для безопасных и прозрачных платежей.
+Вам не нужно содержать штатную команду — просто выделяйте бюджет по мере необходимости для новых функций и задач по автоматизации.
+Этот подход гарантирует гибкую модель разработки по требованию, помогает держать процесс под контролем и исключает лишних посредников.</p>
+                  </div>
+                </div>
+                <p>Сэкономьте средства с помощью готовых компонентов и конкурентных ставок разработчиков, обеспеченных системой эскроу с локальным балансом для безопасных и прозрачных платежей.
+Вам не нужно содержать штатную команду — просто выделяйте бюджет по мере необходимости для новых функций и задач по автоматизации.
+Этот подход гарантирует гибкую модель разработки по требованию, помогает держать процесс под контролем и исключает лишних посредников.</p>
+              </article>
+              <article class="key_benefits-content_left_item">
+                <div class="key_benefits-content_left_item_header">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="48"
+                      height="48"
+                      rx="12"
+                      stroke="#1F1F1F"
+                      stroke-dasharray="4 4"
+                    />
+                    <rect
+                      x="5"
+                      y="5"
+                      width="40"
+                      height="40"
+                      rx="8"
+                      fill="#1F1F1F"
+                    />
+                    <mask id="path-3-inside-1_2601_4041" fill="white">
+                      <path
+                        d="M24.134 24.3535C24.6123 24.0774 25.3877 24.0774 25.866 24.3535L37.1244 30.8535C37.6026 31.1297 37.6026 31.5774 37.1244 31.8535L25.866 38.3535C25.3877 38.6297 24.6123 38.6297 24.134 38.3535L12.8756 31.8535C12.3974 31.5774 12.3974 31.1297 12.8756 30.8535L24.134 24.3535Z"
+                      />
+                    </mask>
+                    <path
+                      d="M24.134 24.3535C24.6123 24.0774 25.3877 24.0774 25.866 24.3535L37.1244 30.8535C37.6026 31.1297 37.6026 31.5774 37.1244 31.8535L25.866 38.3535C25.3877 38.6297 24.6123 38.6297 24.134 38.3535L12.8756 31.8535C12.3974 31.5774 12.3974 31.1297 12.8756 30.8535L24.134 24.3535Z"
+                      fill="#1F1F1F"
+                      stroke="white"
+                      stroke-width="3"
+                      mask="url(#path-3-inside-1_2601_4041)"
+                    />
+                    <path
+                      d="M12.8756 25.1463L24.1339 31.6463V32.6463L12.8756 26.1463V25.1463Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M25.8659 31.6463L37.1243 25.1463V26.1463L25.8659 32.6463V31.6463Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M12.5168 24.6463C12.5168 24.8416 12.6539 25.0183 12.8756 25.1463V26.1463C12.6539 26.0183 12.5168 25.8416 12.5168 25.6463V24.6463Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M24.1339 31.6463C24.6122 31.9224 25.3877 31.9224 25.8659 31.6463V32.6463C25.3877 32.9224 24.6122 32.9224 24.1339 32.6463V31.6463Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M37.483 24.6463C37.483 24.8416 37.3459 25.0183 37.1243 25.1463V26.1463C37.3459 26.0183 37.483 25.8416 37.483 25.6463V24.6463Z"
+                      fill="#1F1F1F"
+                    />
+                    <mask id="path-5-inside-2_2601_4041" fill="white">
+                      <path
+                        d="M24.134 17.6464C24.6123 17.3703 25.3877 17.3703 25.866 17.6464L37.1244 24.1464C37.6026 24.4226 37.6026 24.8703 37.1244 25.1464L25.866 31.6464C25.3877 31.9226 24.6123 31.9226 24.134 31.6464L12.8756 25.1464C12.3974 24.8703 12.3974 24.4226 12.8756 24.1464L24.134 17.6464Z"
+                      />
+                    </mask>
+                    <path
+                      d="M24.134 17.6464C24.6123 17.3703 25.3877 17.3703 25.866 17.6464L37.1244 24.1464C37.6026 24.4226 37.6026 24.8703 37.1244 25.1464L25.866 31.6464C25.3877 31.9226 24.6123 31.9226 24.134 31.6464L12.8756 25.1464C12.3974 24.8703 12.3974 24.4226 12.8756 24.1464L24.134 17.6464Z"
+                      fill="#1F1F1F"
+                      stroke="white"
+                      stroke-width="3"
+                      mask="url(#path-5-inside-2_2601_4041)"
+                    />
+                    <path
+                      d="M12.8756 18.4392L24.1339 24.9392V25.9392L12.8756 19.4392V18.4392Z"
+                      fill="#E8EBF3"
+                    />
+                    <path
+                      d="M25.8659 24.9392L37.1243 18.4392V19.4392L25.8659 25.9392V24.9392Z"
+                      fill="#E8EBF3"
+                    />
+                    <path
+                      d="M12.5168 17.9392C12.5168 18.1345 12.6539 18.3112 12.8756 18.4392V19.4392C12.6539 19.3112 12.5168 19.1345 12.5168 18.9392V17.9392Z"
+                      fill="#E8EBF3"
+                    />
+                    <path
+                      d="M24.1339 24.9392C24.6122 25.2154 25.3877 25.2154 25.8659 24.9392V25.9392C25.3877 26.2154 24.6122 26.2154 24.1339 25.9392V24.9392Z"
+                      fill="#E8EBF3"
+                    />
+                    <path
+                      d="M37.483 17.9392C37.483 18.1345 37.3459 18.3112 37.1243 18.4392V19.4392C37.3459 19.3112 37.483 19.1345 37.483 18.9392V17.9392Z"
+                      fill="#E8EBF3"
+                    />
+                    <mask id="path-7-inside-3_2601_4041" fill="white">
+                      <path
+                        d="M24.134 10.9393C24.6123 10.6632 25.3877 10.6632 25.866 10.9393L37.1244 17.4393C37.6026 17.7155 37.6026 18.1632 37.1244 18.4393L25.866 24.9393C25.3877 25.2155 24.6123 25.2155 24.134 24.9393L12.8756 18.4393C12.3974 18.1632 12.3974 17.7155 12.8756 17.4393L24.134 10.9393Z"
+                      />
+                    </mask>
+                    <path
+                      d="M24.134 10.9393C24.6123 10.6632 25.3877 10.6632 25.866 10.9393L37.1244 17.4393C37.6026 17.7155 37.6026 18.1632 37.1244 18.4393L25.866 24.9393C25.3877 25.2155 24.6123 25.2155 24.134 24.9393L12.8756 18.4393C12.3974 18.1632 12.3974 17.7155 12.8756 17.4393L24.134 10.9393Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="3"
+                      mask="url(#path-7-inside-3_2601_4041)"
+                    />
+                  </svg>
+                  <div class="key_benefits-content_left_item_header_title">
+                    <h3>Контроль проекта</h3>
+                    <p>Отслеживайте прогресс, управляйте задачами и соблюдайте сроки</p>
+                  </div>
+                </div>
+                <p>Отслеживайте прогресс, управляйте задачами и соблюдайте сроки</p>
+              </article>
+              <article class="key_benefits-content_left_item">
+                <div class="key_benefits-content_left_item_header">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="48"
+                      height="48"
+                      rx="12"
+                      stroke="#1F1F1F"
+                      stroke-dasharray="4 4"
+                    />
+                    <rect
+                      x="5"
+                      y="5"
+                      width="40"
+                      height="40"
+                      rx="8"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.3918 30.9607L27.9407 33.531L22.9407 19.0974L27.3918 16.5261L32.3918 30.9607Z"
+                      stroke="white"
+                    />
+                    <path
+                      d="M26.9661 33.3621L17.7003 28.0125L22.3332 19.989L26.9661 33.3621Z"
+                      fill="white"
+                      stroke="white"
+                    />
+                    <path
+                      d="M40 25.0293C40 33.3136 33.2843 40.0293 25 40.0293C16.7157 40.0293 10 33.3136 10 25.0293C10 16.745 16.7157 10.0293 25 10.0293C33.2843 10.0293 40 16.745 40 25.0293ZM11.6312 25.0293C11.6312 32.4127 17.6166 38.3981 25 38.3981C32.3834 38.3981 38.3688 32.4127 38.3688 25.0293C38.3688 17.6459 32.3834 11.6605 25 11.6605C17.6166 11.6605 11.6312 17.6459 11.6312 25.0293Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <div class="key_benefits-content_left_item_header_title">
+                    <h3>Экспертная поддержка</h3>
+                    <p>Получайте консультации от сертифицированных агентов и экспертов платформы на каждом этапе</p>
+                  </div>
+                </div>
+                <p>Получайте консультации от сертифицированных агентов и экспертов платформы на каждом этапе</p>
+              </article>
+            </div>
+            <div id="key-benefits" class="key_benefits-content_right"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Key Benefits End -->
+      <!-- Solving Pain Start -->
+      <section id="points" class="section section--base">
+        <div class="section_wrapper section_wrapper--base">
+          <div class="section_title">
+            <h2>Решение ваших проблем</h2>
+            <div class="section_title_line"></div>
+          </div>
+          <div class="solving-pain">
+            <article class="solving-pain_card problem">
+              <div class="solving-pain_card-header">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="48"
+                    height="48"
+                    rx="12"
+                    stroke="#EE585A"
+                    stroke-dasharray="4 4"
+                  />
+                  <rect
+                    x="5"
+                    y="5"
+                    width="40"
+                    height="40"
+                    rx="8"
+                    fill="#EE585A"
+                  />
+                  <path
+                    d="M40 25C40 33.2843 33.2843 40 25 40C16.7157 40 10 33.2843 10 25C10 16.7157 16.7157 10 25 10C33.2843 10 40 16.7157 40 25ZM11.6312 25C11.6312 32.3834 17.6166 38.3688 25 38.3688C32.3834 38.3688 38.3688 32.3834 38.3688 25C38.3688 17.6166 32.3834 11.6312 25 11.6312C17.6166 11.6312 11.6312 17.6166 11.6312 25Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.1 31.3C19.7134 31.6866 19.0866 31.6866 18.7 31.3C18.3134 30.9134 18.3134 30.2866 18.7 29.9L23.6 25L18.7 20.1C18.3134 19.7134 18.3134 19.0866 18.7 18.7C19.0866 18.3134 19.7134 18.3134 20.1 18.7L25 23.6L29.9 18.7C30.2866 18.3134 30.9134 18.3134 31.3 18.7C31.6866 19.0866 31.6866 19.7134 31.3 20.1L26.4 25L31.3 29.9C31.6866 30.2866 31.6866 30.9134 31.3 31.3C30.9134 31.6866 30.2866 31.6866 29.9 31.3L25 26.4L20.1 31.3Z"
+                    fill="white"
+                  />
+                </svg>
+                <h6 class="solving-pain_card-title brand">Проблема:</h6>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  Сложный процесс с высокой вариативностью
+                </li>
+                <li class="list-item">
+                  Процесс кажется запутанным
+                </li>
+                <li class="list-item">
+                  Отсутствует прозрачность и контроль
+                </li>
+              </ul>
+            </article>
+            <article class="solving-pain_card solution">
+              <div class="solving-pain_card-header">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="48"
+                    height="48"
+                    rx="12"
+                    stroke="#009393"
+                    stroke-dasharray="4 4"
+                  />
+                  <rect
+                    x="5"
+                    y="5"
+                    width="40"
+                    height="40"
+                    rx="8"
+                    fill="#009393"
+                  />
+                  <path
+                    d="M22.7 31.025L17.7071 26.0321C17.3166 25.6416 17.322 25.003 17.7125 24.6125C18.103 24.222 18.7416 24.2166 19.1321 24.6071L22.7 28.175L31.1679 19.7071C31.5584 19.3166 32.197 19.322 32.5875 19.7125C32.978 20.103 32.9834 20.7416 32.5929 21.1321L22.7 31.025Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M40 25C40 33.2843 33.2843 40 25 40C16.7157 40 10 33.2843 10 25C10 16.7157 16.7157 10 25 10C33.2843 10 40 16.7157 40 25ZM11.6312 25C11.6312 32.3834 17.6166 38.3688 25 38.3688C32.3834 38.3688 38.3688 32.3834 38.3688 25C38.3688 17.6166 32.3834 11.6312 25 11.6312C17.6166 11.6312 11.6312 17.6166 11.6312 25Z"
+                    fill="white"
+                  />
+                </svg>
+                <h6 class="solving-pain_card-title teal">Решение</h6>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  <strong>Платежи через эскроу</strong> для гарантии безопасных выплат
+                </li>
+                <li class="list-item">
+                  <strong>Готовые модули</strong> для ускорения разработки
+                </li>
+                <li class="list-item">
+                  <strong>Модерация задач</strong> для четких рамок и ожиданий
+                </li>
+                <li class="list-item">
+                  <strong>Система рейтингов специалистов</strong> для роста доверия и видимости
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Solving Pain End -->
+      <!-- How It Works Start -->
+      <section id="how-it-works" class="section section--base">
+        <div class="section_wrapper section_wrapper--base">
+          <div class="section_title">
+            <h2>Как это работает</h2>
+            <div class="section_title_line"></div>
+          </div>
+          <div class="how_it_works-content">
+            <div class="how_it_works-top intersection">
+              <div class="how_it_works-text">
+                <article class="how_it_works-text_item">
+                  <div class="how_it_works-text_item_header">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="48"
+                        height="48"
+                        rx="12"
+                        stroke="#1F1F1F"
+                        stroke-dasharray="4 4"
+                      />
+                      <rect
+                        x="5"
+                        y="5"
+                        width="40"
+                        height="40"
+                        rx="8"
+                        fill="#FDEEEE"
+                      />
+                      <path
+                        d="M26.2701 39.3336V16.648H24.099V20.4142H18.4719V14.3883H22.371V10.5779H27.9981V14.3883H31.9415V39.3336H26.2701Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    <h3>Регистрация</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      Выберите роль: <b>Клиент</b>, <b>Специалист</b> или <b>Агент</b>
+                    </li>
+                    <li class="list-item">
+                      Простая и безопасная идентификация
+                    </li>
+                  </ul>
+                </article>
+                <article class="how_it_works-text_item">
+                  <div class="how_it_works-text_item_header">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="48"
+                        height="48"
+                        rx="12"
+                        stroke="#1F1F1F"
+                        stroke-dasharray="4 4"
+                      />
+                      <rect
+                        x="5"
+                        y="5"
+                        width="40"
+                        height="40"
+                        rx="8"
+                        fill="#E5EBE7"
+                      />
+                      <path
+                        d="M18.6789 39.7181V35.9519H14.7798V26.0713H18.6789V22.3495H30.4204V17.0326H20.4069V20.7987H14.7798V14.7729H18.6789V10.9624H32.1484V14.7729H36.0918V24.5649H32.1484V28.331H20.4069V33.6922H30.4204V29.8818H36.0918V35.9519H32.1484V39.7181H18.6789Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    <h3>Настройка проекта для клиента</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      Привяжите проект к домену с помощью <b>DNS-подтверждения</b>
+                    </li>
+                    <li class="list-item">
+                      Выберите <b>шаблон</b> и <b>набор модулей ITBuild</b> (например, интернет-магазин)
+                    </li>
+                    <li class="list-item">
+                      Платформа собирает проект и настраивает <b>среду разработки с CI/CD</b>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+              <div id="how-it-works-1"></div>
+            </div>
+            <div class="how_it_works-bottom intersection">
+              <div id="how-it-works-2"></div>
+              <div class="how_it_works-text">
+                <article class="how_it_works-text_item">
+                  <div class="how_it_works-text_item_header">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="48"
+                        height="48"
+                        rx="12"
+                        stroke="#1F1F1F"
+                        stroke-dasharray="4 4"
+                      />
+                      <rect
+                        x="5"
+                        y="5"
+                        width="40"
+                        height="40"
+                        rx="8"
+                        fill="#E7E5ED"
+                      />
+                      <path
+                        d="M18.6787 39.7181V35.9519H14.7797V29.8818H20.4067V33.6922H30.4203V28.331H18.6787V22.3495H30.4203V17.0326H20.4067V20.7987H14.7797V14.7729H18.6787V10.9624H32.1483V14.7729H36.0917V24.5649H32.1483V26.0713H36.0917V35.9519H32.1483V39.7181H18.6787Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    <h3>Формирование команды</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      Подключите команду разработки и QA
+                    </li>
+                    <li class="list-item">
+                      Создайте задачу или набор задач
+                    </li>
+                  </ul>
+                </article>
+                <article class="how_it_works-text_item">
+                  <div class="how_it_works-text_item_header">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="48"
+                        height="48"
+                        rx="12"
+                        stroke="#1F1F1F"
+                        stroke-dasharray="4 4"
+                      />
+                      <rect
+                        x="5"
+                        y="5"
+                        width="40"
+                        height="40"
+                        rx="8"
+                        fill="#E8EBF3"
+                      />
+                      <path
+                        d="M29.6406 39.7557V32.1791H14V22.3871H17.8991V18.5766H21.7982V14.8105H25.7415V11H35.312V39.7557H29.6406ZM19.6271 26.1089H29.6406V17.0702H27.4695V20.8363H23.5262V24.6025H19.6271V26.1089Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                    <h3>Начало автоматизации</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      Добавляйте функции и проверяйте результат
+                    </li>
+                  </ul>
+                  <img
+                    src="/assets/img/image/start-automation.png"
+                    alt="start-automation"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How It Works End -->
+      <!-- Support Start -->
+      <section id="support" class="section section--base">
+        <div class="section_wrapper section_wrapper--base">
+          <div class="section_title">
+            <h2>Поддержка</h2>
+            <div class="section_title_line"></div>
+          </div>
+          <div class="support-content">
+            <div class="support-top">
+              <article class="support-text support-top_text">
+                <div class="support-text-wrapper">
+                  <div class="support-text_header">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="48"
+                        height="48"
+                        rx="12"
+                        stroke="#1F1F1F"
+                        stroke-dasharray="4 4"
+                      />
+                      <path
+                        d="M37 5C41.4183 5 45 8.58172 45 13V37C45 41.4183 41.4183 45 37 45H13C8.58172 45 5 41.4183 5 37V13C5 8.58172 8.58172 5 13 5H37ZM13 38.2002H37V19H22.5996V28.5996H27.4004V23.7998H32.2002V33.3994H17.7998V11.7998H13V38.2002Z"
+                        fill="#1F1F1F"
+                      />
+                      <path
+                        d="M22.5999 16.5998V11.7998H27.3999V16.5998H22.5999Z"
+                        fill="#EE585A"
+                      />
+                    </svg>
+                    <h3>Модульная архитектура для автоматизации</h3>
+                  </div>
+                  <div class="support-text_content">
+                    <p><b>ITBuild</b> включает мощный набор готовых к использованию модулей для автоматизации бизнеса:</p>
+                    <ul class="support-top_list">
+                      <li class="support-top_list_item">Chat Module</li>
+                      <li class="support-top_list_item">TrexWallet</li>
+                      <li class="support-top_list_item">Auth Proxy Gate</li>
+                      <li class="support-top_list_item">CRM Module</li>
+                    </ul>
+                    <ul class="support-top_list">
+                      <li class="support-top_list_item">
+                        Exchange Rate Module
+                      </li>
+                      <li class="support-top_list_item">Geo Module</li>
+                    </ul>
+                    <p>Мы постоянно создаём новые модули, которые решают сложные и повторяющиеся технические задачи — чтобы ваша команда могла сосредоточиться на ключевой бизнес-логике без необходимости в дорогих узкоспециализированных специалистах.</p>
+                    <p>Каждый модуль является:</p>
+                    <ul class="list">
+                      <li class="list-item">
+                        <b>Технически проработанным и хорошо документированным</b>
+                      </li>
+                      <li class="list-item">
+                        <b>Постоянно поддерживаемым и улучшаемым</b>
+                      </li>
+                      <li class="list-item">
+                        <b>Оснащённым мощными API</b>
+                      </li>
+                      <li class="list-item">
+                        <b>Частично с открытым исходным кодом для гибкости</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="support-center support-top_center">
+                <svg
+                  width="110"
+                  height="100"
+                  viewBox="0 0 110 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_dddd_2676_53171)">
+                    <path
+                      d="M37.2937 14.6876C37.2937 14.3906 37.5906 14.3906 37.8876 14.3906C38.1845 14.3906 38.4814 14.3906 38.4814 14.6876H37.2937ZM37.2937 17.9538V14.6876H38.4814V17.9538H37.2937ZM38.4814 17.9538C38.4814 18.2507 38.1845 18.5476 37.8876 18.5476C37.5906 18.5476 37.2937 18.2507 37.2937 17.9538H38.4814Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.594 3.70117L37.8875 14.3906C37.5906 14.6875 37.8875 14.9845 38.1845 14.9845L55.4063 25.377C56.0002 25.377 56.2971 25.377 56.594 25.377L75.3005 14.6875L75.5974 14.3906L75.3005 14.0937L57.7817 3.70117C57.4848 3.70117 56.891 3.70117 56.594 3.70117Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.594 3.70117L37.8875 14.3906C37.5906 14.6875 37.8875 14.9845 38.1845 14.9845L55.4063 25.377C56.0002 25.377 56.2971 25.377 56.594 25.377L75.3005 14.6875L75.5974 14.3906L75.3005 14.0937L57.7817 3.70117C57.4848 3.70117 56.891 3.70117 56.594 3.70117Z"
+                      fill="url(#paint0_linear_2676_53171)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.594 3.70117L37.8875 14.3906C37.5906 14.6875 37.8875 14.9845 38.1845 14.9845L55.4063 25.377C56.0002 25.377 56.2971 25.377 56.594 25.377L75.3005 14.6875L75.5974 14.3906L75.3005 14.0937L57.7817 3.70117C57.4848 3.70117 56.891 3.70117 56.594 3.70117Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M75.0035 14.6876C75.0035 14.3907 75.3005 14.0938 75.5974 14.0938C75.8943 14.0938 75.8943 14.3907 75.8943 14.6876H75.0035ZM75.0035 18.2507V14.6876H75.8943V18.2507H75.0035ZM75.8943 18.2507C75.8943 18.5477 75.8943 18.8446 75.5974 18.8446C75.3005 18.8446 75.0035 18.5477 75.0035 18.2507H75.8943Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M55.4062 25.6739C55.4062 25.377 55.7032 25.0801 56.0001 25.0801C56.297 25.0801 56.594 25.377 56.594 25.6739H55.4062ZM55.4062 29.2371V25.6739H56.594V29.2371H55.4062ZM56.594 29.2371C56.594 29.8309 56.297 30.1279 56.0001 30.1279C55.7032 30.1279 55.4062 29.8309 55.4062 29.2371H56.594Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4097 82.0903L77.082 83.5749C77.379 83.8719 77.9728 83.8719 78.2697 83.8719L96.9762 72.8855H97.2732"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.082 73.4794C77.082 72.8856 77.379 72.5886 77.6759 72.5886C77.9728 72.5886 78.2697 72.8856 78.2697 73.4794H77.082ZM77.082 83.278V73.4794H78.2697V83.278H77.082ZM78.2697 83.278C78.2697 83.8719 77.9728 84.4658 77.6759 84.4658C77.379 84.4658 77.082 83.8719 77.082 83.278H78.2697Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4097 61.0083L77.082 62.493C77.379 62.7899 77.9728 62.7899 78.2697 62.493L96.9762 51.8035H97.2732C97.2732 51.5066 96.9762 51.5066 96.9762 51.2097L94.6008 50.022"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6793 51.8036C96.6793 51.5067 96.9763 50.9128 97.2732 50.9128C97.5701 50.9128 97.5701 51.5067 97.5701 51.8036H96.6793ZM96.6793 72.5886V51.8036H97.5701V72.5886H96.6793ZM97.5701 72.5886C97.5701 73.1825 97.5701 73.4794 97.2732 73.4794C96.9763 73.4794 96.6793 73.1825 96.6793 72.5886H97.5701Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M77.082 63.0868C77.082 62.493 77.379 62.196 77.6759 62.196C77.9728 62.196 78.2697 62.493 78.2697 63.0868H77.082ZM77.082 83.278V63.0868H78.2697V83.278H77.082ZM78.2697 83.278C78.2697 83.8718 77.9728 84.1688 77.6759 84.1688C77.379 84.1688 77.082 83.8718 77.082 83.278H78.2697Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4097 57.7422L77.082 59.2268C77.379 59.5238 77.9728 59.5238 78.2697 59.2268L96.9762 48.5374C96.9762 48.5374 97.2732 48.5374 97.2732 48.2405"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.082 38.4418C77.082 38.1448 77.379 37.8479 77.6759 37.8479C77.9728 37.8479 78.2697 38.1448 78.2697 38.4418H77.082ZM77.082 58.9298V38.4418H78.2697V58.9298H77.082ZM78.2697 58.9298C78.2697 59.2268 77.9728 59.5237 77.6759 59.5237C77.379 59.5237 77.082 59.2268 77.082 58.9298H78.2697Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M58.9694 27.4554C58.9694 27.1584 59.2663 27.1584 59.5632 27.1584C59.8601 27.1584 59.8602 27.1584 59.8602 27.4554H58.9694ZM58.9694 30.7216V27.4554H59.8602V30.7216H58.9694ZM59.8602 30.7216C59.8602 31.0185 59.8601 31.3154 59.5632 31.3154C59.2663 31.3154 58.9694 31.0185 58.9694 30.7216H59.8602Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2697 16.4692L59.5632 27.4556C59.2662 27.4556 59.2662 27.7525 59.5632 28.0495L77.0819 38.145C77.3789 38.442 77.9727 38.442 78.2697 38.145L96.9762 27.4556C96.9762 27.4556 97.2731 27.4556 97.2731 27.1587L96.9762 26.8617L79.4574 16.7662C79.1604 16.4692 78.5666 16.4692 78.2697 16.4692Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2697 16.4692L59.5632 27.4556C59.2662 27.4556 59.2662 27.7525 59.5632 28.0495L77.0819 38.145C77.3789 38.442 77.9727 38.442 78.2697 38.145L96.9762 27.4556C96.9762 27.4556 97.2731 27.4556 97.2731 27.1587L96.9762 26.8617L79.4574 16.7662C79.1604 16.4692 78.5666 16.4692 78.2697 16.4692Z"
+                      fill="url(#paint1_linear_2676_53171)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2697 16.4692L59.5632 27.4556C59.2662 27.4556 59.2662 27.7525 59.5632 28.0495L77.0819 38.145C77.3789 38.442 77.9727 38.442 78.2697 38.145L96.9762 27.4556C96.9762 27.4556 97.2731 27.4556 97.2731 27.1587L96.9762 26.8617L79.4574 16.7662C79.1604 16.4692 78.5666 16.4692 78.2697 16.4692Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6793 27.4555C96.6793 26.8616 96.9763 26.5647 97.2732 26.5647C97.5701 26.5647 97.5701 26.8616 97.5701 27.4555H96.6793ZM96.6793 48.2405V27.4555H97.5701V48.2405H96.6793ZM97.5701 48.2405C97.5701 48.5374 97.5701 49.1313 97.2732 49.1313C96.9763 49.1313 96.6793 48.5374 96.6793 48.2405H97.5701Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M15.321 72.8855C15.024 73.1824 15.024 73.1824 15.321 73.4794L32.8398 83.8719C33.1367 83.8719 33.7305 83.8719 34.0275 83.8719L49.4678 74.964"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4301 62.79C14.4301 62.1961 14.727 61.8992 15.0239 61.8992C15.3208 61.8992 15.6178 62.1961 15.6178 62.79H14.4301ZM14.4301 73.1825V62.79H15.6178V73.1825H14.4301ZM15.6178 73.1825C15.6178 73.4794 15.3208 74.0732 15.0239 74.0732C14.727 74.0732 14.4301 73.4794 14.4301 73.1825H15.6178Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8397 73.4794C32.8397 72.8856 33.1366 72.5886 33.4336 72.5886C33.7305 72.5886 33.7305 72.8856 33.7305 73.4794H32.8397ZM32.8397 83.575V73.4794H33.7305V83.575H32.8397ZM33.7305 83.575C33.7305 83.8719 33.7305 84.4658 33.4336 84.4658C33.1366 84.4658 32.8397 83.8719 32.8397 83.575H33.7305Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4301 52.3974C14.4301 51.8035 14.727 51.5066 15.0239 51.5066C15.3208 51.5066 15.6178 51.8035 15.6178 52.3974H14.4301ZM14.4301 72.5885V52.3974H15.6178V72.5885H14.4301ZM15.6178 72.5885C15.6178 73.1824 15.3208 73.4793 15.0239 73.4793C14.727 73.4793 14.4301 73.1824 14.4301 72.5885H15.6178Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M25.7135 45.865L15.321 51.8036C15.024 52.1005 15.024 52.1005 15.321 52.3974L32.8398 62.7899C33.1367 62.7899 33.7305 62.7899 34.0275 62.7899L52.437 52.1005C52.734 51.8036 52.734 51.8036 52.734 51.8036C52.734 51.5066 52.734 51.5066 52.437 51.5066"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.14 52.1006C52.14 51.5067 52.4369 50.9128 52.7339 50.9128C53.0308 50.9128 53.3277 51.5067 53.3277 52.1006H52.14ZM52.14 64.8685V52.1006H53.3277V64.8685H52.14ZM53.3277 64.8685C53.3277 65.4623 53.0308 65.7593 52.7339 65.7593C52.4369 65.7593 52.14 65.4623 52.14 64.8685H53.3277Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8397 63.3837C32.8397 63.0868 33.1366 62.4929 33.4336 62.4929C33.7305 62.4929 33.7305 63.0868 33.7305 63.3837H32.8397ZM32.8397 83.5748V63.3837H33.7305V83.5748H32.8397ZM33.7305 83.5748C33.7305 83.8718 33.7305 84.4656 33.4336 84.4656C33.1366 84.4656 32.8397 83.8718 32.8397 83.5748H33.7305Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.321 52.3975L15.024 73.4794L33.4336 84.1688V62.79L15.321 52.3975Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.321 52.3975L15.024 73.4794L33.4336 84.1688V62.79L15.321 52.3975Z"
+                      fill="url(#paint2_linear_2676_53171)"
+                    />
+                    <path
+                      d="M15.321 48.5374C15.024 48.5374 15.024 48.8343 15.321 49.1312L32.8398 59.2268C33.1367 59.5237 33.7305 59.5237 34.0275 59.2268L47.9831 51.2097"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4301 38.4419C14.4301 37.848 14.727 37.2542 15.0239 37.2542C15.3208 37.2542 15.6178 37.848 15.6178 38.4419H14.4301ZM14.4301 48.5374V38.4419H15.6178V48.5374H14.4301ZM15.6178 48.5374C15.6178 49.1313 15.3208 49.4282 15.0239 49.4282C14.727 49.4282 14.4301 49.1313 14.4301 48.5374H15.6178Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8397 49.1313C32.8397 48.5374 33.1366 48.2405 33.4336 48.2405C33.7305 48.2405 33.7305 48.5374 33.7305 49.1313H32.8397ZM32.8397 58.9299V49.1313H33.7305V58.9299H32.8397ZM33.7305 58.9299C33.7305 59.5238 33.7305 60.1176 33.4336 60.1176C33.1366 60.1176 32.8397 59.5238 32.8397 58.9299H33.7305Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4301 28.0492C14.4301 27.4554 14.727 27.1584 15.0239 27.1584C15.3208 27.1584 15.6178 27.4554 15.6178 28.0492H14.4301ZM14.4301 48.2404V28.0492H15.6178V48.2404H14.4301ZM15.6178 48.2404C15.6178 48.5373 15.3208 49.1312 15.0239 49.1312C14.727 49.1312 14.4301 48.5373 14.4301 48.2404H15.6178Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0275 16.7659L15.321 27.4553C15.024 27.4553 15.024 27.7523 15.321 28.0492L32.8398 38.1448C33.1367 38.4417 33.7305 38.4417 34.0275 38.1448L52.437 27.4553C52.734 27.4553 52.734 27.4553 52.734 27.1584C52.734 27.1584 52.734 27.1584 52.437 26.8615L34.9182 16.7659C34.6213 16.469 34.3244 16.469 34.0275 16.7659Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0275 16.7659L15.321 27.4553C15.024 27.4553 15.024 27.7523 15.321 28.0492L32.8398 38.1448C33.1367 38.4417 33.7305 38.4417 34.0275 38.1448L52.437 27.4553C52.734 27.4553 52.734 27.4553 52.734 27.1584C52.734 27.1584 52.734 27.1584 52.437 26.8615L34.9182 16.7659C34.6213 16.469 34.3244 16.469 34.0275 16.7659Z"
+                      fill="url(#paint3_linear_2676_53171)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0275 16.7659L15.321 27.4553C15.024 27.4553 15.024 27.7523 15.321 28.0492L32.8398 38.1448C33.1367 38.4417 33.7305 38.4417 34.0275 38.1448L52.437 27.4553C52.734 27.4553 52.734 27.4553 52.734 27.1584C52.734 27.1584 52.734 27.1584 52.437 26.8615L34.9182 16.7659C34.6213 16.469 34.3244 16.469 34.0275 16.7659Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.14 27.4554C52.14 27.1584 52.4369 27.1584 52.7339 27.1584C53.0308 27.1584 53.3277 27.1584 53.3277 27.4554H52.14ZM52.14 31.0185V27.4554H53.3277V31.0185H52.14ZM53.3277 31.0185C53.3277 31.3154 53.0308 31.6124 52.7339 31.6124C52.4369 31.6124 52.14 31.3154 52.14 31.0185H53.3277Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8397 38.7387C32.8397 38.4418 33.1366 37.8479 33.4336 37.8479C33.7305 37.8479 33.7305 38.4418 33.7305 38.7387H32.8397ZM32.8397 58.9298V38.7387H33.7305V58.9298H32.8397ZM33.7305 58.9298C33.7305 59.5237 33.7305 59.8206 33.4336 59.8206C33.1366 59.8206 32.8397 59.5237 32.8397 58.9298H33.7305Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.321 28.0493L15.024 49.1312L33.4336 59.8207V38.4418L15.321 28.0493Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.321 28.0493L15.024 49.1312L33.4336 59.8207V38.4418L15.321 28.0493Z"
+                      fill="url(#paint4_linear_2676_53171)"
+                    />
+                    <path
+                      d="M36.9967 85.6536C36.6998 85.9505 36.6998 86.2474 36.9967 86.2474L54.5155 96.6399C54.8125 96.6399 55.1094 96.9369 55.4063 96.6399L74.1128 85.9505C74.4097 85.9505 74.4097 85.6536 74.4097 85.6536"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.106 75.5578C36.106 74.9639 36.4029 74.667 36.6998 74.667C36.9967 74.667 37.2937 74.9639 37.2937 75.5578H36.106ZM36.106 85.9503V75.5578H37.2937V85.9503H36.106ZM37.2937 85.9503C37.2937 86.5441 36.9967 86.8411 36.6998 86.8411C36.4029 86.8411 36.106 86.5441 36.106 85.9503H37.2937Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5155 86.2472C54.5155 85.9503 54.5155 85.3564 54.8124 85.3564C55.1094 85.3564 55.4063 85.9503 55.4063 86.2472H54.5155ZM54.5155 96.3428V86.2472H55.4063V96.3428H54.5155ZM55.4063 96.3428C55.4063 96.9367 55.1094 97.2336 54.8124 97.2336C54.5155 97.2336 54.5155 96.9367 54.5155 96.3428H55.4063Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.106 65.1655C36.106 64.8685 36.4029 64.2747 36.6998 64.2747C36.9967 64.2747 37.2937 64.8685 37.2937 65.1655H36.106ZM36.106 85.3566V65.1655H37.2937V85.3566H36.106ZM37.2937 85.3566C37.2937 85.9504 36.9967 86.2474 36.6998 86.2474C36.4029 86.2474 36.106 85.9504 36.106 85.3566H37.2937Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M49.1708 57.7422L36.9967 64.5715C36.6998 64.8685 36.6998 65.1654 36.9967 65.1654L54.5155 75.5579C54.8125 75.5579 55.1094 75.8548 55.4063 75.5579L74.1128 64.8685C74.4097 64.8685 74.4097 64.5715 74.4097 64.5715C74.4097 64.5715 74.4097 64.2746 74.1128 64.2746L71.7374 62.79"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8158 64.8683C73.8158 64.2745 74.1127 63.9775 74.4096 63.9775C74.7066 63.9775 75.0035 64.2745 75.0035 64.8683H73.8158ZM73.8158 85.3564V64.8683H75.0035V85.3564H73.8158ZM75.0035 85.3564C75.0035 85.9503 74.7066 86.2472 74.4096 86.2472C74.1127 86.2472 73.8158 85.9503 73.8158 85.3564H75.0035Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5155 75.8549C54.5155 75.558 54.5155 74.9641 54.8124 74.9641C55.1094 74.9641 55.4063 75.558 55.4063 75.8549H54.5155ZM54.5155 96.343V75.8549H55.4063V96.343H54.5155ZM55.4063 96.343C55.4063 96.9368 55.1094 97.2338 54.8124 97.2338C54.5155 97.2338 54.5155 96.9368 54.5155 96.343H55.4063Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9966 65.1655L36.6997 86.2474L54.8124 96.9369L55.1093 75.558L36.9966 65.1655Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9966 65.1655L36.6997 86.2474L54.8124 96.9369L55.1093 75.558L36.9966 65.1655Z"
+                      fill="url(#paint5_linear_2676_53171)"
+                    />
+                    <path
+                      d="M36.9967 61.3054C36.6998 61.6023 36.6998 61.8993 36.9967 61.8993L54.5155 72.2918C54.8125 72.2918 55.1094 72.2918 55.4063 72.2918L74.1128 61.6023C74.4097 61.3054 74.4097 61.3054 74.4097 61.3054"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.106 51.2096C36.106 50.6158 36.4029 50.3188 36.6998 50.3188C36.9967 50.3188 37.2937 50.6158 37.2937 51.2096H36.106ZM36.106 61.6021V51.2096H37.2937V61.6021H36.106ZM37.2937 61.6021C37.2937 61.8991 36.9967 62.4929 36.6998 62.4929C36.4029 62.4929 36.106 61.8991 36.106 61.6021H37.2937Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5155 61.8991C54.5155 61.3052 54.5155 61.0083 54.8124 61.0083C55.1094 61.0083 55.4063 61.3052 55.4063 61.8991H54.5155ZM54.5155 71.9947V61.8991H55.4063V71.9947H54.5155ZM55.4063 71.9947C55.4063 72.2916 55.1094 72.8854 54.8124 72.8854C54.5155 72.8854 54.5155 72.2916 54.5155 71.9947H55.4063Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.106 40.8173C36.106 40.2234 36.4029 39.9265 36.6998 39.9265C36.9967 39.9265 37.2937 40.2234 37.2937 40.8173H36.106ZM36.106 61.0084V40.8173H37.2937V61.0084H36.106ZM37.2937 61.0084C37.2937 61.6023 36.9967 61.8992 36.6998 61.8992C36.4029 61.8992 36.106 61.6023 36.106 61.0084H37.2937Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7032 29.534L36.9967 40.2234C36.6998 40.5203 36.6998 40.5203 36.9967 40.8173L54.5155 51.2098C54.8125 51.2098 55.1094 51.2098 55.4063 51.2098L74.1128 40.5203C74.4097 40.2234 74.4097 40.2234 74.4097 40.2234C74.4097 39.9265 74.4097 39.9265 74.1128 39.9265L59.2664 31.0186L56.594 29.534C56.2971 29.237 56.0002 29.237 55.7032 29.534Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7032 29.534L36.9967 40.2234C36.6998 40.5203 36.6998 40.5203 36.9967 40.8173L54.5155 51.2098C54.8125 51.2098 55.1094 51.2098 55.4063 51.2098L74.1128 40.5203C74.4097 40.2234 74.4097 40.2234 74.4097 40.2234C74.4097 39.9265 74.4097 39.9265 74.1128 39.9265L59.2664 31.0186L56.594 29.534C56.2971 29.237 56.0002 29.237 55.7032 29.534Z"
+                      fill="url(#paint6_linear_2676_53171)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7032 29.534L36.9967 40.2234C36.6998 40.5203 36.6998 40.5203 36.9967 40.8173L54.5155 51.2098C54.8125 51.2098 55.1094 51.2098 55.4063 51.2098L74.1128 40.5203C74.4097 40.2234 74.4097 40.2234 74.4097 40.2234C74.4097 39.9265 74.4097 39.9265 74.1128 39.9265L59.2664 31.0186L56.594 29.534C56.2971 29.237 56.0002 29.237 55.7032 29.534Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8158 40.5202C73.8158 39.9263 74.1127 39.6294 74.4096 39.6294C74.7066 39.6294 75.0035 39.9263 75.0035 40.5202H73.8158ZM73.8158 60.7113V40.5202H75.0035V60.7113H73.8158ZM75.0035 60.7113C75.0035 61.3052 74.7066 61.6021 74.4096 61.6021C74.1127 61.6021 73.8158 61.3052 73.8158 60.7113H75.0035ZM73.8158 61.3052V60.7113H75.0035V61.3052H73.8158ZM75.0035 61.3052C75.0035 61.6021 74.7066 61.899 74.4096 61.899C74.1127 61.899 73.8158 61.6021 73.8158 61.3052H75.0035Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5155 51.5068C54.5155 50.9129 54.5155 50.616 54.8124 50.616C55.1094 50.616 55.4063 50.9129 55.4063 51.5068H54.5155ZM54.5155 71.6979V51.5068H55.4063V71.6979H54.5155ZM55.4063 71.6979C55.4063 71.9948 55.1094 72.5887 54.8124 72.5887C54.5155 72.5887 54.5155 71.9948 54.5155 71.6979H55.4063Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9966 40.8174L36.6997 61.8993L54.8124 72.5887L55.1093 51.2099L36.9966 40.8174Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9966 40.8174L36.6997 61.8993L54.8124 72.5887L55.1093 51.2099L36.9966 40.8174Z"
+                      fill="url(#paint7_linear_2676_53171)"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_dddd_2676_53171"
+                      x="0.430054"
+                      y="0.107422"
+                      width="117.437"
+                      height="156.258"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="3" />
+                      <feGaussianBlur stdDeviation="3" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_2676_53171"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="11" />
+                      <feGaussianBlur stdDeviation="5.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.09 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_2676_53171"
+                        result="effect2_dropShadow_2676_53171"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="24" />
+                      <feGaussianBlur stdDeviation="7" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.05 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect2_dropShadow_2676_53171"
+                        result="effect3_dropShadow_2676_53171"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="3" dy="42" />
+                      <feGaussianBlur stdDeviation="8.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.01 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect3_dropShadow_2676_53171"
+                        result="effect4_dropShadow_2676_53171"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect4_dropShadow_2676_53171"
+                        result="shape"
+                      />
+                    </filter>
+                    <linearGradient
+                      id="paint0_linear_2676_53171"
+                      x1="56.681"
+                      y1="3.70117"
+                      x2="56.681"
+                      y2="25.377"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_2676_53171"
+                      x1="78.3068"
+                      y1="16.4692"
+                      x2="78.3068"
+                      y2="38.3677"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_2676_53171"
+                      x1="15.0226"
+                      y1="68.2991"
+                      x2="33.4336"
+                      y2="68.2991"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#887BA6" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_2676_53171"
+                      x1="33.9161"
+                      y1="16.5432"
+                      x2="33.9161"
+                      y2="38.3675"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint4_linear_2676_53171"
+                      x1="15.0226"
+                      y1="43.951"
+                      x2="33.4336"
+                      y2="43.951"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#887BA6" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint5_linear_2676_53171"
+                      x1="36.6982"
+                      y1="81.0672"
+                      x2="55.1093"
+                      y2="81.0672"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#887BA6" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint6_linear_2676_53171"
+                      x1="55.5919"
+                      y1="29.3113"
+                      x2="55.5919"
+                      y2="51.2098"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint7_linear_2676_53171"
+                      x1="36.6982"
+                      y1="56.719"
+                      x2="55.1093"
+                      y2="56.719"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#887BA6" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  width="110"
+                  height="100"
+                  viewBox="0 0 110 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_dddd_2676_53247)">
+                    <path
+                      d="M37.2936 15.22C37.2936 14.9231 37.5905 14.9231 37.8874 14.9231C38.1844 14.9231 38.4813 14.9231 38.4813 15.22H37.2936ZM37.2936 18.4862V15.22H38.4813V18.4862H37.2936ZM38.4813 18.4862C38.4813 18.7832 38.1844 19.0801 37.8874 19.0801C37.5905 19.0801 37.2936 18.7832 37.2936 18.4862H38.4813Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 4.23364L37.8874 14.9231C37.5905 15.22 37.8874 15.5169 38.1843 15.5169L55.4062 25.9094C56 25.9094 56.297 25.9094 56.5939 25.9094L75.3004 15.22L75.5973 14.9231L75.3004 14.6261L57.7816 4.23364C57.4847 4.23364 56.8908 4.23364 56.5939 4.23364Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 4.23364L37.8874 14.9231C37.5905 15.22 37.8874 15.5169 38.1843 15.5169L55.4062 25.9094C56 25.9094 56.297 25.9094 56.5939 25.9094L75.3004 15.22L75.5973 14.9231L75.3004 14.6261L57.7816 4.23364C57.4847 4.23364 56.8908 4.23364 56.5939 4.23364Z"
+                      fill="url(#paint0_linear_2676_53247)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 4.23364L37.8874 14.9231C37.5905 15.22 37.8874 15.5169 38.1843 15.5169L55.4062 25.9094C56 25.9094 56.297 25.9094 56.5939 25.9094L75.3004 15.22L75.5973 14.9231L75.3004 14.6261L57.7816 4.23364C57.4847 4.23364 56.8908 4.23364 56.5939 4.23364Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M75.0034 15.2201C75.0034 14.9231 75.3003 14.6262 75.5973 14.6262C75.8942 14.6262 75.8942 14.9231 75.8942 15.2201H75.0034ZM75.0034 18.7832V15.2201H75.8942V18.7832H75.0034ZM75.8942 18.7832C75.8942 19.0801 75.8942 19.3771 75.5973 19.3771C75.3003 19.3771 75.0034 19.0801 75.0034 18.7832H75.8942Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M55.4061 26.2064C55.4061 25.9095 55.7031 25.6125 56 25.6125C56.2969 25.6125 56.5938 25.9095 56.5938 26.2064H55.4061ZM55.4061 29.7696V26.2064H56.5938V29.7696H55.4061ZM56.5938 29.7696C56.5938 30.3634 56.2969 30.6603 56 30.6603C55.7031 30.6603 55.4061 30.3634 55.4061 29.7696H56.5938Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 82.6228L77.0819 84.1074C77.3788 84.4043 77.9727 84.4043 78.2696 84.4043L96.9761 73.418H97.2731"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.0819 74.0119C77.0819 73.418 77.3789 73.1211 77.6758 73.1211C77.9727 73.1211 78.2696 73.418 78.2696 74.0119H77.0819ZM77.0819 83.8105V74.0119H78.2696V83.8105H77.0819ZM78.2696 83.8105C78.2696 84.4044 77.9727 84.9982 77.6758 84.9982C77.3789 84.9982 77.0819 84.4044 77.0819 83.8105H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 61.5408L77.0819 63.0254C77.3788 63.3224 77.9727 63.3224 78.2696 63.0254L96.9761 52.336H97.2731C97.2731 52.0391 96.9761 52.0391 96.9761 51.7422L94.6007 50.5544"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6792 52.3361C96.6792 52.0392 96.9761 51.4453 97.2731 51.4453C97.57 51.4453 97.57 52.0392 97.57 52.3361H96.6792ZM96.6792 73.1211V52.3361H97.57V73.1211H96.6792ZM97.57 73.1211C97.57 73.715 97.57 74.0119 97.2731 74.0119C96.9761 74.0119 96.6792 73.715 96.6792 73.1211H97.57Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M77.0819 63.6193C77.0819 63.0254 77.3789 62.7285 77.6758 62.7285C77.9727 62.7285 78.2696 63.0254 78.2696 63.6193H77.0819ZM77.0819 83.8104V63.6193H78.2696V83.8104H77.0819ZM78.2696 83.8104C78.2696 84.4043 77.9727 84.7012 77.6758 84.7012C77.3789 84.7012 77.0819 84.4043 77.0819 83.8104H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 58.2747L77.0819 59.7593C77.3788 60.0562 77.9727 60.0562 78.2696 59.7593L96.9761 49.0699C96.9761 49.0699 97.2731 49.0699 97.2731 48.7729"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.0819 38.9742C77.0819 38.6773 77.3789 38.3804 77.6758 38.3804C77.9727 38.3804 78.2696 38.6773 78.2696 38.9742H77.0819ZM77.0819 59.4623V38.9742H78.2696V59.4623H77.0819ZM78.2696 59.4623C78.2696 59.7592 77.9727 60.0562 77.6758 60.0562C77.3789 60.0562 77.0819 59.7592 77.0819 59.4623H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M58.9692 27.9878C58.9692 27.6909 59.2662 27.6909 59.5631 27.6909C59.86 27.6909 59.86 27.6909 59.86 27.9878H58.9692ZM58.9692 31.2541V27.9878H59.86V31.2541H58.9692ZM59.86 31.2541C59.86 31.551 59.86 31.8479 59.5631 31.8479C59.2662 31.8479 58.9692 31.551 58.9692 31.2541H59.86Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 17.0017L59.563 27.9881C59.2661 27.9881 59.2661 28.285 59.563 28.5819L77.0818 38.6775C77.3787 38.9744 77.9726 38.9744 78.2695 38.6775L96.976 27.9881C96.976 27.9881 97.273 27.9881 97.273 27.6911L96.976 27.3942L79.4572 17.2986C79.1603 17.0017 78.5665 17.0017 78.2695 17.0017Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 17.0017L59.563 27.9881C59.2661 27.9881 59.2661 28.285 59.563 28.5819L77.0818 38.6775C77.3787 38.9744 77.9726 38.9744 78.2695 38.6775L96.976 27.9881C96.976 27.9881 97.273 27.9881 97.273 27.6911L96.976 27.3942L79.4572 17.2986C79.1603 17.0017 78.5665 17.0017 78.2695 17.0017Z"
+                      fill="url(#paint1_linear_2676_53247)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 17.0017L59.563 27.9881C59.2661 27.9881 59.2661 28.285 59.563 28.5819L77.0818 38.6775C77.3787 38.9744 77.9726 38.9744 78.2695 38.6775L96.976 27.9881C96.976 27.9881 97.273 27.9881 97.273 27.6911L96.976 27.3942L79.4572 17.2986C79.1603 17.0017 78.5665 17.0017 78.2695 17.0017Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6792 27.988C96.6792 27.3941 96.9761 27.0972 97.2731 27.0972C97.57 27.0972 97.57 27.3941 97.57 27.988H96.6792ZM96.6792 48.773V27.988H97.57V48.773H96.6792ZM97.57 48.773C97.57 49.0699 97.57 49.6637 97.2731 49.6637C96.9761 49.6637 96.6792 49.0699 96.6792 48.773H97.57Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M15.3208 73.418C15.0239 73.7149 15.0239 73.7149 15.3208 74.0118L32.8396 84.4043C33.1366 84.4043 33.7304 84.4043 34.0273 84.4043L49.4676 75.4965"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4299 63.3224C14.4299 62.7286 14.7269 62.4316 15.0238 62.4316C15.3207 62.4316 15.6176 62.7286 15.6176 63.3224H14.4299ZM14.4299 73.7149V63.3224H15.6176V73.7149H14.4299ZM15.6176 73.7149C15.6176 74.0119 15.3207 74.6057 15.0238 74.6057C14.7269 74.6057 14.4299 74.0119 14.4299 73.7149H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 74.0119C32.8396 73.418 33.1365 73.1211 33.4335 73.1211C33.7304 73.1211 33.7304 73.418 33.7304 74.0119H32.8396ZM32.8396 84.1074V74.0119H33.7304V84.1074H32.8396ZM33.7304 84.1074C33.7304 84.4044 33.7304 84.9982 33.4335 84.9982C33.1365 84.9982 32.8396 84.4044 32.8396 84.1074H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4299 52.9298C14.4299 52.336 14.7269 52.0391 15.0238 52.0391C15.3207 52.0391 15.6176 52.336 15.6176 52.9298H14.4299ZM14.4299 73.121V52.9298H15.6176V73.121H14.4299ZM15.6176 73.121C15.6176 73.7148 15.3207 74.0118 15.0238 74.0118C14.7269 74.0118 14.4299 73.7148 14.4299 73.121H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M25.7133 46.3975L15.3208 52.336C15.0239 52.633 15.0239 52.633 15.3208 52.9299L32.8396 63.3224C33.1366 63.3224 33.7304 63.3224 34.0273 63.3224L52.4369 52.633C52.7338 52.336 52.7338 52.336 52.7338 52.336C52.7338 52.0391 52.7338 52.0391 52.4369 52.0391"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.1399 52.633C52.1399 52.0392 52.4368 51.4453 52.7337 51.4453C53.0307 51.4453 53.3276 52.0392 53.3276 52.633H52.1399ZM52.1399 65.401V52.633H53.3276V65.401H52.1399ZM53.3276 65.401C53.3276 65.9948 53.0307 66.2917 52.7337 66.2917C52.4368 66.2917 52.1399 65.9948 52.1399 65.401H53.3276Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 63.9162C32.8396 63.6192 33.1365 63.0254 33.4335 63.0254C33.7304 63.0254 33.7304 63.6192 33.7304 63.9162H32.8396ZM32.8396 84.1073V63.9162H33.7304V84.1073H32.8396ZM33.7304 84.1073C33.7304 84.4042 33.7304 84.9981 33.4335 84.9981C33.1365 84.9981 32.8396 84.4042 32.8396 84.1073H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 52.9299L15.0239 74.0119L33.4335 84.7013V63.3224L15.3209 52.9299Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 52.9299L15.0239 74.0119L33.4335 84.7013V63.3224L15.3209 52.9299Z"
+                      fill="url(#paint2_linear_2676_53247)"
+                    />
+                    <path
+                      d="M15.3208 49.0698C15.0239 49.0698 15.0239 49.3668 15.3208 49.6637L32.8396 59.7593C33.1366 60.0562 33.7304 60.0562 34.0273 59.7593L47.983 51.7422"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4299 38.9743C14.4299 38.3805 14.7269 37.7866 15.0238 37.7866C15.3207 37.7866 15.6176 38.3805 15.6176 38.9743H14.4299ZM14.4299 49.0699V38.9743H15.6176V49.0699H14.4299ZM15.6176 49.0699C15.6176 49.6638 15.3207 49.9607 15.0238 49.9607C14.7269 49.9607 14.4299 49.6638 14.4299 49.0699H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 49.6637C32.8396 49.0699 33.1365 48.7729 33.4335 48.7729C33.7304 48.7729 33.7304 49.0699 33.7304 49.6637H32.8396ZM32.8396 59.4624V49.6637H33.7304V59.4624H32.8396ZM33.7304 59.4624C33.7304 60.0562 33.7304 60.6501 33.4335 60.6501C33.1365 60.6501 32.8396 60.0562 32.8396 59.4624H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4299 28.5817C14.4299 27.9878 14.7269 27.6909 15.0238 27.6909C15.3207 27.6909 15.6176 27.9878 15.6176 28.5817H14.4299ZM14.4299 48.7728V28.5817H15.6176V48.7728H14.4299ZM15.6176 48.7728C15.6176 49.0698 15.3207 49.6636 15.0238 49.6636C14.7269 49.6636 14.4299 49.0698 14.4299 48.7728H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 17.2984L15.3208 27.9878C15.0239 27.9878 15.0239 28.2847 15.3208 28.5817L32.8396 38.6772C33.1366 38.9742 33.7304 38.9742 34.0273 38.6772L52.4369 27.9878C52.7338 27.9878 52.7338 27.9878 52.7338 27.6909C52.7338 27.6909 52.7338 27.6909 52.4369 27.394L34.9181 17.2984C34.6212 17.0015 34.3243 17.0015 34.0273 17.2984Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 17.2984L15.3208 27.9878C15.0239 27.9878 15.0239 28.2847 15.3208 28.5817L32.8396 38.6772C33.1366 38.9742 33.7304 38.9742 34.0273 38.6772L52.4369 27.9878C52.7338 27.9878 52.7338 27.9878 52.7338 27.6909C52.7338 27.6909 52.7338 27.6909 52.4369 27.394L34.9181 17.2984C34.6212 17.0015 34.3243 17.0015 34.0273 17.2984Z"
+                      fill="url(#paint3_linear_2676_53247)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 17.2984L15.3208 27.9878C15.0239 27.9878 15.0239 28.2847 15.3208 28.5817L32.8396 38.6772C33.1366 38.9742 33.7304 38.9742 34.0273 38.6772L52.4369 27.9878C52.7338 27.9878 52.7338 27.9878 52.7338 27.6909C52.7338 27.6909 52.7338 27.6909 52.4369 27.394L34.9181 17.2984C34.6212 17.0015 34.3243 17.0015 34.0273 17.2984Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.1399 27.9878C52.1399 27.6909 52.4368 27.6909 52.7337 27.6909C53.0307 27.6909 53.3276 27.6909 53.3276 27.9878H52.1399ZM52.1399 31.551V27.9878H53.3276V31.551H52.1399ZM53.3276 31.551C53.3276 31.8479 53.0307 32.1448 52.7337 32.1448C52.4368 32.1448 52.1399 31.8479 52.1399 31.551H53.3276Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 39.2712C32.8396 38.9742 33.1365 38.3804 33.4335 38.3804C33.7304 38.3804 33.7304 38.9742 33.7304 39.2712H32.8396ZM32.8396 59.4623V39.2712H33.7304V59.4623H32.8396ZM33.7304 59.4623C33.7304 60.0562 33.7304 60.3531 33.4335 60.3531C33.1365 60.3531 32.8396 60.0562 32.8396 59.4623H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 28.5818L15.0239 49.6637L33.4335 60.3531V38.9743L15.3209 28.5818Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 28.5818L15.0239 49.6637L33.4335 60.3531V38.9743L15.3209 28.5818Z"
+                      fill="url(#paint4_linear_2676_53247)"
+                    />
+                    <path
+                      d="M36.9966 86.186C36.6997 86.483 36.6997 86.7799 36.9966 86.7799L54.5154 97.1724C54.8123 97.1724 55.1093 97.4693 55.4062 97.1724L74.1127 86.483C74.4096 86.483 74.4096 86.186 74.4096 86.186"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.1058 76.0902C36.1058 75.4964 36.4028 75.1995 36.6997 75.1995C36.9966 75.1995 37.2935 75.4964 37.2935 76.0902H36.1058ZM36.1058 86.4827V76.0902H37.2935V86.4827H36.1058ZM37.2935 86.4827C37.2935 87.0766 36.9966 87.3735 36.6997 87.3735C36.4028 87.3735 36.1058 87.0766 36.1058 86.4827H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 86.7797C54.5154 86.4828 54.5154 85.8889 54.8123 85.8889C55.1092 85.8889 55.4062 86.4828 55.4062 86.7797H54.5154ZM54.5154 96.8753V86.7797H55.4062V96.8753H54.5154ZM55.4062 96.8753C55.4062 97.4691 55.1092 97.7661 54.8123 97.7661C54.5154 97.7661 54.5154 97.4691 54.5154 96.8753H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.1058 65.6979C36.1058 65.401 36.4028 64.8071 36.6997 64.8071C36.9966 64.8071 37.2935 65.401 37.2935 65.6979H36.1058ZM36.1058 85.8891V65.6979H37.2935V85.8891H36.1058ZM37.2935 85.8891C37.2935 86.4829 36.9966 86.7798 36.6997 86.7798C36.4028 86.7798 36.1058 86.4829 36.1058 85.8891H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M49.1707 58.2747L36.9966 65.104C36.6997 65.4009 36.6997 65.6979 36.9966 65.6979L54.5154 76.0904C54.8123 76.0904 55.1093 76.3873 55.4062 76.0904L74.1127 65.4009C74.4096 65.4009 74.4096 65.104 74.4096 65.104C74.4096 65.104 74.4096 64.8071 74.1127 64.8071L71.7373 63.3224"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8157 65.4008C73.8157 64.8069 74.1126 64.51 74.4095 64.51C74.7064 64.51 75.0034 64.8069 75.0034 65.4008H73.8157ZM73.8157 85.8889V65.4008H75.0034V85.8889H73.8157ZM75.0034 85.8889C75.0034 86.4827 74.7064 86.7797 74.4095 86.7797C74.1126 86.7797 73.8157 86.4827 73.8157 85.8889H75.0034Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 76.3874C54.5154 76.0904 54.5154 75.4966 54.8123 75.4966C55.1092 75.4966 55.4062 76.0904 55.4062 76.3874H54.5154ZM54.5154 96.8754V76.3874H55.4062V96.8754H54.5154ZM55.4062 96.8754C55.4062 97.4693 55.1092 97.7662 54.8123 97.7662C54.5154 97.7662 54.5154 97.4693 54.5154 96.8754H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 65.698L36.6996 86.7799L54.8122 97.4694L55.1092 76.0905L36.9965 65.698Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 65.698L36.6996 86.7799L54.8122 97.4694L55.1092 76.0905L36.9965 65.698Z"
+                      fill="url(#paint5_linear_2676_53247)"
+                    />
+                    <path
+                      d="M36.9966 61.8379C36.6997 62.1348 36.6997 62.4317 36.9966 62.4317L54.5154 72.8243C54.8123 72.8243 55.1093 72.8243 55.4062 72.8243L74.1127 62.1348C74.4096 61.8379 74.4096 61.8379 74.4096 61.8379"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.1058 51.7421C36.1058 51.1482 36.4028 50.8513 36.6997 50.8513C36.9966 50.8513 37.2935 51.1482 37.2935 51.7421H36.1058ZM36.1058 62.1346V51.7421H37.2935V62.1346H36.1058ZM37.2935 62.1346C37.2935 62.4315 36.9966 63.0254 36.6997 63.0254C36.4028 63.0254 36.1058 62.4315 36.1058 62.1346H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 62.4316C54.5154 61.8377 54.5154 61.5408 54.8123 61.5408C55.1092 61.5408 55.4062 61.8377 55.4062 62.4316H54.5154ZM54.5154 72.5271V62.4316H55.4062V72.5271H54.5154ZM55.4062 72.5271C55.4062 72.8241 55.1092 73.4179 54.8123 73.4179C54.5154 73.4179 54.5154 72.8241 54.5154 72.5271H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.1058 41.3498C36.1058 40.7559 36.4028 40.459 36.6997 40.459C36.9966 40.459 37.2935 40.7559 37.2935 41.3498H36.1058ZM36.1058 61.5409V41.3498H37.2935V61.5409H36.1058ZM37.2935 61.5409C37.2935 62.1348 36.9966 62.4317 36.6997 62.4317C36.4028 62.4317 36.1058 62.1348 36.1058 61.5409H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 30.0664L36.9966 40.7559C36.6997 41.0528 36.6997 41.0528 36.9966 41.3497L54.5154 51.7422C54.8123 51.7422 55.1093 51.7422 55.4062 51.7422L74.1127 41.0528C74.4096 40.7559 74.4096 40.7559 74.4096 40.7559C74.4096 40.4589 74.4096 40.4589 74.1127 40.4589L59.2663 31.5511L56.5939 30.0664C56.297 29.7695 56.0001 29.7695 55.7031 30.0664Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 30.0664L36.9966 40.7559C36.6997 41.0528 36.6997 41.0528 36.9966 41.3497L54.5154 51.7422C54.8123 51.7422 55.1093 51.7422 55.4062 51.7422L74.1127 41.0528C74.4096 40.7559 74.4096 40.7559 74.4096 40.7559C74.4096 40.4589 74.4096 40.4589 74.1127 40.4589L59.2663 31.5511L56.5939 30.0664C56.297 29.7695 56.0001 29.7695 55.7031 30.0664Z"
+                      fill="url(#paint6_linear_2676_53247)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 30.0664L36.9966 40.7559C36.6997 41.0528 36.6997 41.0528 36.9966 41.3497L54.5154 51.7422C54.8123 51.7422 55.1093 51.7422 55.4062 51.7422L74.1127 41.0528C74.4096 40.7559 74.4096 40.7559 74.4096 40.7559C74.4096 40.4589 74.4096 40.4589 74.1127 40.4589L59.2663 31.5511L56.5939 30.0664C56.297 29.7695 56.0001 29.7695 55.7031 30.0664Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8157 41.0527C73.8157 40.4588 74.1126 40.1619 74.4095 40.1619C74.7064 40.1619 75.0034 40.4588 75.0034 41.0527H73.8157ZM73.8157 61.2438V41.0527H75.0034V61.2438H73.8157ZM75.0034 61.2438C75.0034 61.8377 74.7064 62.1346 74.4095 62.1346C74.1126 62.1346 73.8157 61.8377 73.8157 61.2438H75.0034ZM73.8157 61.8377V61.2438H75.0034V61.8377H73.8157ZM75.0034 61.8377C75.0034 62.1346 74.7064 62.4315 74.4095 62.4315C74.1126 62.4315 73.8157 62.1346 73.8157 61.8377H75.0034Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 52.0392C54.5154 51.4454 54.5154 51.1484 54.8123 51.1484C55.1092 51.1484 55.4062 51.4454 55.4062 52.0392H54.5154ZM54.5154 72.2304V52.0392H55.4062V72.2304H54.5154ZM55.4062 72.2304C55.4062 72.5273 55.1092 73.1212 54.8123 73.1212C54.5154 73.1212 54.5154 72.5273 54.5154 72.2304H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 41.3499L36.6996 62.4318L54.8122 73.1212L55.1092 51.7424L36.9965 41.3499Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 41.3499L36.6996 62.4318L54.8122 73.1212L55.1092 51.7424L36.9965 41.3499Z"
+                      fill="url(#paint7_linear_2676_53247)"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_dddd_2676_53247"
+                      x="0.429932"
+                      y="0.639893"
+                      width="117.437"
+                      height="156.258"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="3" />
+                      <feGaussianBlur stdDeviation="3" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_2676_53247"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="11" />
+                      <feGaussianBlur stdDeviation="5.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.09 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_2676_53247"
+                        result="effect2_dropShadow_2676_53247"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="24" />
+                      <feGaussianBlur stdDeviation="7" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.05 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect2_dropShadow_2676_53247"
+                        result="effect3_dropShadow_2676_53247"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="3" dy="42" />
+                      <feGaussianBlur stdDeviation="8.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.01 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect3_dropShadow_2676_53247"
+                        result="effect4_dropShadow_2676_53247"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect4_dropShadow_2676_53247"
+                        result="shape"
+                      />
+                    </filter>
+                    <linearGradient
+                      id="paint0_linear_2676_53247"
+                      x1="56.6809"
+                      y1="4.23364"
+                      x2="56.6809"
+                      y2="25.9094"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_2676_53247"
+                      x1="78.3067"
+                      y1="17.0017"
+                      x2="78.3067"
+                      y2="38.9002"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_2676_53247"
+                      x1="15.0225"
+                      y1="68.8316"
+                      x2="33.4335"
+                      y2="68.8316"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#1F1F1F" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_2676_53247"
+                      x1="33.916"
+                      y1="17.0757"
+                      x2="33.916"
+                      y2="38.8999"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint4_linear_2676_53247"
+                      x1="15.0225"
+                      y1="44.4834"
+                      x2="33.4335"
+                      y2="44.4834"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#1F1F1F" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint5_linear_2676_53247"
+                      x1="36.6981"
+                      y1="81.5996"
+                      x2="55.1092"
+                      y2="81.5996"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#1F1F1F" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint6_linear_2676_53247"
+                      x1="55.5918"
+                      y1="29.8438"
+                      x2="55.5918"
+                      y2="51.7422"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint7_linear_2676_53247"
+                      x1="36.6981"
+                      y1="57.2515"
+                      x2="55.1092"
+                      y2="57.2515"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#1F1F1F" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  width="110"
+                  height="100"
+                  viewBox="0 0 110 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_dddd_2676_53323)">
+                    <path
+                      d="M37.2936 14.7525C37.2936 14.4556 37.5905 14.4556 37.8874 14.4556C38.1844 14.4556 38.4813 14.4556 38.4813 14.7525H37.2936ZM37.2936 18.0187V14.7525H38.4813V18.0187H37.2936ZM38.4813 18.0187C38.4813 18.3156 38.1844 18.6126 37.8874 18.6126C37.5905 18.6126 37.2936 18.3156 37.2936 18.0187H38.4813Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 3.76611L37.8874 14.4555C37.5905 14.7525 37.8874 15.0494 38.1843 15.0494L55.4062 25.4419C56 25.4419 56.297 25.4419 56.5939 25.4419L75.3004 14.7525L75.5973 14.4555L75.3004 14.1586L57.7816 3.76611C57.4847 3.76611 56.8908 3.76611 56.5939 3.76611Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 3.76611L37.8874 14.4555C37.5905 14.7525 37.8874 15.0494 38.1843 15.0494L55.4062 25.4419C56 25.4419 56.297 25.4419 56.5939 25.4419L75.3004 14.7525L75.5973 14.4555L75.3004 14.1586L57.7816 3.76611C57.4847 3.76611 56.8908 3.76611 56.5939 3.76611Z"
+                      fill="url(#paint0_linear_2676_53323)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.5939 3.76611L37.8874 14.4555C37.5905 14.7525 37.8874 15.0494 38.1843 15.0494L55.4062 25.4419C56 25.4419 56.297 25.4419 56.5939 25.4419L75.3004 14.7525L75.5973 14.4555L75.3004 14.1586L57.7816 3.76611C57.4847 3.76611 56.8908 3.76611 56.5939 3.76611Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M75.0034 14.7525C75.0034 14.4556 75.3003 14.1587 75.5973 14.1587C75.8942 14.1587 75.8942 14.4556 75.8942 14.7525H75.0034ZM75.0034 18.3157V14.7525H75.8942V18.3157H75.0034ZM75.8942 18.3157C75.8942 18.6126 75.8942 18.9095 75.5973 18.9095C75.3003 18.9095 75.0034 18.6126 75.0034 18.3157H75.8942Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M55.4061 25.7389C55.4061 25.442 55.7031 25.145 56 25.145C56.2969 25.145 56.5938 25.442 56.5938 25.7389H55.4061ZM55.4061 29.302V25.7389H56.5938V29.302H55.4061ZM56.5938 29.302C56.5938 29.8959 56.2969 30.1928 56 30.1928C55.7031 30.1928 55.4061 29.8959 55.4061 29.302H56.5938Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 82.1552L77.0819 83.6399C77.3788 83.9368 77.9727 83.9368 78.2696 83.9368L96.9761 72.9504H97.2731"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.0819 73.5443C77.0819 72.9505 77.3789 72.6536 77.6758 72.6536C77.9727 72.6536 78.2696 72.9505 78.2696 73.5443H77.0819ZM77.0819 83.343V73.5443H78.2696V83.343H77.0819ZM78.2696 83.343C78.2696 83.9368 77.9727 84.5307 77.6758 84.5307C77.3789 84.5307 77.0819 83.9368 77.0819 83.343H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 61.0733L77.0819 62.5579C77.3788 62.8548 77.9727 62.8548 78.2696 62.5579L96.9761 51.8685H97.2731C97.2731 51.5716 96.9761 51.5716 96.9761 51.2746L94.6007 50.0869"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6792 51.8686C96.6792 51.5716 96.9761 50.9778 97.2731 50.9778C97.57 50.9778 97.57 51.5716 97.57 51.8686H96.6792ZM96.6792 72.6536V51.8686H97.57V72.6536H96.6792ZM97.57 72.6536C97.57 73.2474 97.57 73.5444 97.2731 73.5444C96.9761 73.5444 96.6792 73.2474 96.6792 72.6536H97.57Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M77.0819 63.1518C77.0819 62.5579 77.3789 62.261 77.6758 62.261C77.9727 62.261 78.2696 62.5579 78.2696 63.1518H77.0819ZM77.0819 83.3429V63.1518H78.2696V83.3429H77.0819ZM78.2696 83.3429C78.2696 83.9368 77.9727 84.2337 77.6758 84.2337C77.3789 84.2337 77.0819 83.9368 77.0819 83.3429H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M74.4095 57.8071L77.0819 59.2918C77.3788 59.5887 77.9727 59.5887 78.2696 59.2918L96.9761 48.6023C96.9761 48.6023 97.2731 48.6023 97.2731 48.3054"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M77.0819 38.5067C77.0819 38.2098 77.3789 37.9128 77.6758 37.9128C77.9727 37.9128 78.2696 38.2098 78.2696 38.5067H77.0819ZM77.0819 58.9948V38.5067H78.2696V58.9948H77.0819ZM78.2696 58.9948C78.2696 59.2917 77.9727 59.5886 77.6758 59.5886C77.3789 59.5886 77.0819 59.2917 77.0819 58.9948H78.2696Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M58.9692 27.5203C58.9692 27.2234 59.2662 27.2234 59.5631 27.2234C59.86 27.2234 59.86 27.2234 59.86 27.5203H58.9692ZM58.9692 30.7865V27.5203H59.86V30.7865H58.9692ZM59.86 30.7865C59.86 31.0835 59.86 31.3804 59.5631 31.3804C59.2662 31.3804 58.9692 31.0835 58.9692 30.7865H59.86Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 16.5342L59.563 27.5205C59.2661 27.5205 59.2661 27.8175 59.563 28.1144L77.0818 38.21C77.3787 38.5069 77.9726 38.5069 78.2695 38.21L96.976 27.5205C96.976 27.5205 97.273 27.5205 97.273 27.2236L96.976 26.9267L79.4572 16.8311C79.1603 16.5342 78.5665 16.5342 78.2695 16.5342Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 16.5342L59.563 27.5205C59.2661 27.5205 59.2661 27.8175 59.563 28.1144L77.0818 38.21C77.3787 38.5069 77.9726 38.5069 78.2695 38.21L96.976 27.5205C96.976 27.5205 97.273 27.5205 97.273 27.2236L96.976 26.9267L79.4572 16.8311C79.1603 16.5342 78.5665 16.5342 78.2695 16.5342Z"
+                      fill="url(#paint1_linear_2676_53323)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M78.2695 16.5342L59.563 27.5205C59.2661 27.5205 59.2661 27.8175 59.563 28.1144L77.0818 38.21C77.3787 38.5069 77.9726 38.5069 78.2695 38.21L96.976 27.5205C96.976 27.5205 97.273 27.5205 97.273 27.2236L96.976 26.9267L79.4572 16.8311C79.1603 16.5342 78.5665 16.5342 78.2695 16.5342Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M96.6792 27.5204C96.6792 26.9266 96.9761 26.6296 97.2731 26.6296C97.57 26.6296 97.57 26.9266 97.57 27.5204H96.6792ZM96.6792 48.3054V27.5204H97.57V48.3054H96.6792ZM97.57 48.3054C97.57 48.6024 97.57 49.1962 97.2731 49.1962C96.9761 49.1962 96.6792 48.6024 96.6792 48.3054H97.57Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M15.3208 72.9504C15.0239 73.2474 15.0239 73.2474 15.3208 73.5443L32.8396 83.9368C33.1366 83.9368 33.7304 83.9368 34.0273 83.9368L49.4676 75.0289"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4299 62.8549C14.4299 62.261 14.7269 61.9641 15.0238 61.9641C15.3207 61.9641 15.6176 62.261 15.6176 62.8549H14.4299ZM14.4299 73.2474V62.8549H15.6176V73.2474H14.4299ZM15.6176 73.2474C15.6176 73.5443 15.3207 74.1382 15.0238 74.1382C14.7269 74.1382 14.4299 73.5443 14.4299 73.2474H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 73.5443C32.8396 72.9505 33.1365 72.6536 33.4335 72.6536C33.7304 72.6536 33.7304 72.9505 33.7304 73.5443H32.8396ZM32.8396 83.6399V73.5443H33.7304V83.6399H32.8396ZM33.7304 83.6399C33.7304 83.9368 33.7304 84.5307 33.4335 84.5307C33.1365 84.5307 32.8396 83.9368 32.8396 83.6399H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4299 52.4623C14.4299 51.8685 14.7269 51.5715 15.0238 51.5715C15.3207 51.5715 15.6176 51.8685 15.6176 52.4623H14.4299ZM14.4299 72.6535V52.4623H15.6176V72.6535H14.4299ZM15.6176 72.6535C15.6176 73.2473 15.3207 73.5442 15.0238 73.5442C14.7269 73.5442 14.4299 73.2473 14.4299 72.6535H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M25.7133 45.9299L15.3208 51.8685C15.0239 52.1654 15.0239 52.1654 15.3208 52.4624L32.8396 62.8549C33.1366 62.8549 33.7304 62.8549 34.0273 62.8549L52.4369 52.1654C52.7338 51.8685 52.7338 51.8685 52.7338 51.8685C52.7338 51.5716 52.7338 51.5716 52.4369 51.5716"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.1399 52.1655C52.1399 51.5716 52.4368 50.9778 52.7337 50.9778C53.0307 50.9778 53.3276 51.5716 53.3276 52.1655H52.1399ZM52.1399 64.9334V52.1655H53.3276V64.9334H52.1399ZM53.3276 64.9334C53.3276 65.5273 53.0307 65.8242 52.7337 65.8242C52.4368 65.8242 52.1399 65.5273 52.1399 64.9334H53.3276Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 63.4486C32.8396 63.1517 33.1365 62.5579 33.4335 62.5579C33.7304 62.5579 33.7304 63.1517 33.7304 63.4486H32.8396ZM32.8396 83.6398V63.4486H33.7304V83.6398H32.8396ZM33.7304 83.6398C33.7304 83.9367 33.7304 84.5306 33.4335 84.5306C33.1365 84.5306 32.8396 83.9367 32.8396 83.6398H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 52.4624L15.0239 73.5443L33.4335 84.2338V62.8549L15.3209 52.4624Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 52.4624L15.0239 73.5443L33.4335 84.2338V62.8549L15.3209 52.4624Z"
+                      fill="url(#paint2_linear_2676_53323)"
+                    />
+                    <path
+                      d="M15.3208 48.6023C15.0239 48.6023 15.0239 48.8992 15.3208 49.1962L32.8396 59.2917C33.1366 59.5887 33.7304 59.5887 34.0273 59.2917L47.983 51.2746"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.4299 38.5068C14.4299 37.9129 14.7269 37.3191 15.0238 37.3191C15.3207 37.3191 15.6176 37.9129 15.6176 38.5068H14.4299ZM14.4299 48.6024V38.5068H15.6176V48.6024H14.4299ZM15.6176 48.6024C15.6176 49.1962 15.3207 49.4932 15.0238 49.4932C14.7269 49.4932 14.4299 49.1962 14.4299 48.6024H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 49.1962C32.8396 48.6023 33.1365 48.3054 33.4335 48.3054C33.7304 48.3054 33.7304 48.6023 33.7304 49.1962H32.8396ZM32.8396 58.9948V49.1962H33.7304V58.9948H32.8396ZM33.7304 58.9948C33.7304 59.5887 33.7304 60.1826 33.4335 60.1826C33.1365 60.1826 32.8396 59.5887 32.8396 58.9948H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M14.4299 28.1142C14.4299 27.5203 14.7269 27.2234 15.0238 27.2234C15.3207 27.2234 15.6176 27.5203 15.6176 28.1142H14.4299ZM14.4299 48.3053V28.1142H15.6176V48.3053H14.4299ZM15.6176 48.3053C15.6176 48.6022 15.3207 49.1961 15.0238 49.1961C14.7269 49.1961 14.4299 48.6022 14.4299 48.3053H15.6176Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 16.8309L15.3208 27.5203C15.0239 27.5203 15.0239 27.8172 15.3208 28.1141L32.8396 38.2097C33.1366 38.5066 33.7304 38.5066 34.0273 38.2097L52.4369 27.5203C52.7338 27.5203 52.7338 27.5203 52.7338 27.2234C52.7338 27.2234 52.7338 27.2234 52.4369 26.9264L34.9181 16.8309C34.6212 16.5339 34.3243 16.5339 34.0273 16.8309Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 16.8309L15.3208 27.5203C15.0239 27.5203 15.0239 27.8172 15.3208 28.1141L32.8396 38.2097C33.1366 38.5066 33.7304 38.5066 34.0273 38.2097L52.4369 27.5203C52.7338 27.5203 52.7338 27.5203 52.7338 27.2234C52.7338 27.2234 52.7338 27.2234 52.4369 26.9264L34.9181 16.8309C34.6212 16.5339 34.3243 16.5339 34.0273 16.8309Z"
+                      fill="url(#paint3_linear_2676_53323)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M34.0273 16.8309L15.3208 27.5203C15.0239 27.5203 15.0239 27.8172 15.3208 28.1141L32.8396 38.2097C33.1366 38.5066 33.7304 38.5066 34.0273 38.2097L52.4369 27.5203C52.7338 27.5203 52.7338 27.5203 52.7338 27.2234C52.7338 27.2234 52.7338 27.2234 52.4369 26.9264L34.9181 16.8309C34.6212 16.5339 34.3243 16.5339 34.0273 16.8309Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M52.1399 27.5203C52.1399 27.2234 52.4368 27.2234 52.7337 27.2234C53.0307 27.2234 53.3276 27.2234 53.3276 27.5203H52.1399ZM52.1399 31.0835V27.5203H53.3276V31.0835H52.1399ZM53.3276 31.0835C53.3276 31.3804 53.0307 31.6773 52.7337 31.6773C52.4368 31.6773 52.1399 31.3804 52.1399 31.0835H53.3276Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M32.8396 38.8036C32.8396 38.5067 33.1365 37.9128 33.4335 37.9128C33.7304 37.9128 33.7304 38.5067 33.7304 38.8036H32.8396ZM32.8396 58.9948V38.8036H33.7304V58.9948H32.8396ZM33.7304 58.9948C33.7304 59.5886 33.7304 59.8856 33.4335 59.8856C33.1365 59.8856 32.8396 59.5886 32.8396 58.9948H33.7304Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 28.1143L15.0239 49.1962L33.4335 59.8856V38.5068L15.3209 28.1143Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.3209 28.1143L15.0239 49.1962L33.4335 59.8856V38.5068L15.3209 28.1143Z"
+                      fill="url(#paint4_linear_2676_53323)"
+                    />
+                    <path
+                      d="M36.9966 85.7185C36.6997 86.0154 36.6997 86.3124 36.9966 86.3124L54.5154 96.7049C54.8123 96.7049 55.1093 97.0018 55.4062 96.7049L74.1127 86.0154C74.4096 86.0154 74.4096 85.7185 74.4096 85.7185"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.1058 75.6227C36.1058 75.0289 36.4028 74.7319 36.6997 74.7319C36.9966 74.7319 37.2935 75.0289 37.2935 75.6227H36.1058ZM36.1058 86.0152V75.6227H37.2935V86.0152H36.1058ZM37.2935 86.0152C37.2935 86.6091 36.9966 86.906 36.6997 86.906C36.4028 86.906 36.1058 86.6091 36.1058 86.0152H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 86.3122C54.5154 86.0152 54.5154 85.4214 54.8123 85.4214C55.1092 85.4214 55.4062 86.0152 55.4062 86.3122H54.5154ZM54.5154 96.4077V86.3122H55.4062V96.4077H54.5154ZM55.4062 96.4077C55.4062 97.0016 55.1092 97.2985 54.8123 97.2985C54.5154 97.2985 54.5154 97.0016 54.5154 96.4077H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.1058 65.2304C36.1058 64.9335 36.4028 64.3396 36.6997 64.3396C36.9966 64.3396 37.2935 64.9335 37.2935 65.2304H36.1058ZM36.1058 85.4215V65.2304H37.2935V85.4215H36.1058ZM37.2935 85.4215C37.2935 86.0154 36.9966 86.3123 36.6997 86.3123C36.4028 86.3123 36.1058 86.0154 36.1058 85.4215H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M49.1707 57.8071L36.9966 64.6365C36.6997 64.9334 36.6997 65.2303 36.9966 65.2303L54.5154 75.6228C54.8123 75.6228 55.1093 75.9198 55.4062 75.6228L74.1127 64.9334C74.4096 64.9334 74.4096 64.6365 74.4096 64.6365C74.4096 64.6365 74.4096 64.3396 74.1127 64.3396L71.7373 62.8549"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8157 64.9333C73.8157 64.3394 74.1126 64.0425 74.4095 64.0425C74.7064 64.0425 75.0034 64.3394 75.0034 64.9333H73.8157ZM73.8157 85.4213V64.9333H75.0034V85.4213H73.8157ZM75.0034 85.4213C75.0034 86.0152 74.7064 86.3121 74.4095 86.3121C74.1126 86.3121 73.8157 86.0152 73.8157 85.4213H75.0034Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 75.9198C54.5154 75.6229 54.5154 75.0291 54.8123 75.0291C55.1092 75.0291 55.4062 75.6229 55.4062 75.9198H54.5154ZM54.5154 96.4079V75.9198H55.4062V96.4079H54.5154ZM55.4062 96.4079C55.4062 97.0018 55.1092 97.2987 54.8123 97.2987C54.5154 97.2987 54.5154 97.0018 54.5154 96.4079H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 65.2305L36.6996 86.3124L54.8122 97.0018L55.1092 75.623L36.9965 65.2305Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 65.2305L36.6996 86.3124L54.8122 97.0018L55.1092 75.623L36.9965 65.2305Z"
+                      fill="url(#paint5_linear_2676_53323)"
+                    />
+                    <path
+                      d="M36.9966 61.3704C36.6997 61.6673 36.6997 61.9642 36.9966 61.9642L54.5154 72.3567C54.8123 72.3567 55.1093 72.3567 55.4062 72.3567L74.1127 61.6673C74.4096 61.3704 74.4096 61.3704 74.4096 61.3704"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M36.1058 51.2746C36.1058 50.6807 36.4028 50.3838 36.6997 50.3838C36.9966 50.3838 37.2935 50.6807 37.2935 51.2746H36.1058ZM36.1058 61.6671V51.2746H37.2935V61.6671H36.1058ZM37.2935 61.6671C37.2935 61.964 36.9966 62.5579 36.6997 62.5579C36.4028 62.5579 36.1058 61.964 36.1058 61.6671H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 61.964C54.5154 61.3702 54.5154 61.0732 54.8123 61.0732C55.1092 61.0732 55.4062 61.3702 55.4062 61.964H54.5154ZM54.5154 72.0596V61.964H55.4062V72.0596H54.5154ZM55.4062 72.0596C55.4062 72.3565 55.1092 72.9504 54.8123 72.9504C54.5154 72.9504 54.5154 72.3565 54.5154 72.0596H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M36.1058 40.8822C36.1058 40.2884 36.4028 39.9915 36.6997 39.9915C36.9966 39.9915 37.2935 40.2884 37.2935 40.8822H36.1058ZM36.1058 61.0734V40.8822H37.2935V61.0734H36.1058ZM37.2935 61.0734C37.2935 61.6672 36.9966 61.9642 36.6997 61.9642C36.4028 61.9642 36.1058 61.6672 36.1058 61.0734H37.2935Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 29.5989L36.9966 40.2883C36.6997 40.5853 36.6997 40.5853 36.9966 40.8822L54.5154 51.2747C54.8123 51.2747 55.1093 51.2747 55.4062 51.2747L74.1127 40.5853C74.4096 40.2883 74.4096 40.2883 74.4096 40.2883C74.4096 39.9914 74.4096 39.9914 74.1127 39.9914L59.2663 31.0836L56.5939 29.5989C56.297 29.302 56.0001 29.302 55.7031 29.5989Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 29.5989L36.9966 40.2883C36.6997 40.5853 36.6997 40.5853 36.9966 40.8822L54.5154 51.2747C54.8123 51.2747 55.1093 51.2747 55.4062 51.2747L74.1127 40.5853C74.4096 40.2883 74.4096 40.2883 74.4096 40.2883C74.4096 39.9914 74.4096 39.9914 74.1127 39.9914L59.2663 31.0836L56.5939 29.5989C56.297 29.302 56.0001 29.302 55.7031 29.5989Z"
+                      fill="url(#paint6_linear_2676_53323)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55.7031 29.5989L36.9966 40.2883C36.6997 40.5853 36.6997 40.5853 36.9966 40.8822L54.5154 51.2747C54.8123 51.2747 55.1093 51.2747 55.4062 51.2747L74.1127 40.5853C74.4096 40.2883 74.4096 40.2883 74.4096 40.2883C74.4096 39.9914 74.4096 39.9914 74.1127 39.9914L59.2663 31.0836L56.5939 29.5989C56.297 29.302 56.0001 29.302 55.7031 29.5989Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.18771"
+                      stroke-miterlimit="22.9256"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M73.8157 40.5851C73.8157 39.9913 74.1126 39.6943 74.4095 39.6943C74.7064 39.6943 75.0034 39.9913 75.0034 40.5851H73.8157ZM73.8157 60.7763V40.5851H75.0034V60.7763H73.8157ZM75.0034 60.7763C75.0034 61.3701 74.7064 61.667 74.4095 61.667C74.1126 61.667 73.8157 61.3701 73.8157 60.7763H75.0034ZM73.8157 61.3701V60.7763H75.0034V61.3701H73.8157ZM75.0034 61.3701C75.0034 61.667 74.7064 61.964 74.4095 61.964C74.1126 61.964 73.8157 61.667 73.8157 61.3701H75.0034Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      d="M54.5154 51.5717C54.5154 50.9778 54.5154 50.6809 54.8123 50.6809C55.1092 50.6809 55.4062 50.9778 55.4062 51.5717H54.5154ZM54.5154 71.7628V51.5717H55.4062V71.7628H54.5154ZM55.4062 71.7628C55.4062 72.0598 55.1092 72.6536 54.8123 72.6536C54.5154 72.6536 54.5154 72.0598 54.5154 71.7628H55.4062Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 40.8823L36.6996 61.9643L54.8122 72.6537L55.1092 51.2748L36.9965 40.8823Z"
+                      fill="#1F1F1F"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M36.9965 40.8823L36.6996 61.9643L54.8122 72.6537L55.1092 51.2748L36.9965 40.8823Z"
+                      fill="url(#paint7_linear_2676_53323)"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_dddd_2676_53323"
+                      x="0.429932"
+                      y="0.172363"
+                      width="117.437"
+                      height="156.258"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="3" />
+                      <feGaussianBlur stdDeviation="3" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_2676_53323"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="11" />
+                      <feGaussianBlur stdDeviation="5.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.09 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_2676_53323"
+                        result="effect2_dropShadow_2676_53323"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="24" />
+                      <feGaussianBlur stdDeviation="7" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.05 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect2_dropShadow_2676_53323"
+                        result="effect3_dropShadow_2676_53323"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="3" dy="42" />
+                      <feGaussianBlur stdDeviation="8.5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.01 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect3_dropShadow_2676_53323"
+                        result="effect4_dropShadow_2676_53323"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect4_dropShadow_2676_53323"
+                        result="shape"
+                      />
+                    </filter>
+                    <linearGradient
+                      id="paint0_linear_2676_53323"
+                      x1="56.6809"
+                      y1="3.76611"
+                      x2="56.6809"
+                      y2="25.4419"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_2676_53323"
+                      x1="78.3067"
+                      y1="16.5342"
+                      x2="78.3067"
+                      y2="38.4327"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_2676_53323"
+                      x1="15.0225"
+                      y1="68.364"
+                      x2="33.4335"
+                      y2="68.364"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#7B9D89" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_2676_53323"
+                      x1="33.916"
+                      y1="16.6082"
+                      x2="33.916"
+                      y2="38.4324"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint4_linear_2676_53323"
+                      x1="15.0225"
+                      y1="44.0159"
+                      x2="33.4335"
+                      y2="44.0159"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#7B9D89" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint5_linear_2676_53323"
+                      x1="36.6981"
+                      y1="81.1321"
+                      x2="55.1092"
+                      y2="81.1321"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#7B9D89" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint6_linear_2676_53323"
+                      x1="55.5918"
+                      y1="29.3762"
+                      x2="55.5918"
+                      y2="51.2747"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        offset="0"
+                        stop-color="#1F1F1F"
+                        stop-opacity="0.1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#F0F0F0"
+                        stop-opacity="0.1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint7_linear_2676_53323"
+                      x1="36.6981"
+                      y1="56.784"
+                      x2="55.1092"
+                      y2="56.784"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#F0F0F0" />
+                      <stop offset="0.8" stop-color="#7B9D89" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </article>
+            </div>
+            <div class="support-middle">
+              <article class="support-text support-middle_text">
+                <div class="support-text-wrapper">
+                  <div class="support-text_header">
+                    <h3>О компании </br></h3>
+                  </div>
+                  <div class="support-text_content">
+                    <p>С <b>опытом более 12 лет</b> наша команда поставляет программные решения и автоматизирует бизнес-процессы для:</p>
+                    <ul class="list">
+                      <li class="list-item">
+                        Компаний FinTech
+                      </li>
+                      <li class="list-item">
+                        Крупных промышленных предприятий
+                      </li>
+                    </ul>
+                    <p><b>ITBuild</b> — это продукт глубоких отраслевых знаний и реального опыта в автоматизации.</p>
+                  </div>
+                </div>
+                <button id="visit-website" class="arrow-button">
+                  Перейти на сайт
+                  <svg
+                    class="arrow-button_icon"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="28"
+                      height="28"
+                      rx="14"
+                      fill="#1F1F1F"
+                      fill-opacity="0.05"
+                    />
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="27"
+                      height="27"
+                      rx="13.5"
+                      stroke="#1F1F1F"
+                      stroke-opacity="0.3"
+                    />
+                    <path
+                      d="M18.1121 10.7945L9.36167 19.5449C9.21141 19.6952 9.03493 19.7706 8.83223 19.7712C8.62952 19.7718 8.45348 19.6974 8.30411 19.548C8.15473 19.3986 8.0793 19.2216 8.07783 19.0168C8.07636 18.812 8.15075 18.6345 8.30101 18.4842L17.0515 9.7338L12.5663 9.73292C12.3548 9.73351 12.1778 9.6626 12.0354 9.5202C11.893 9.37779 11.8218 9.19856 11.8218 8.9825C11.8218 8.76644 11.893 8.58721 12.0354 8.4448C12.1778 8.3024 12.3571 8.2312 12.5731 8.2312L18.8782 8.2312C18.9803 8.23513 19.0746 8.25575 19.161 8.29307C19.2474 8.33039 19.326 8.38441 19.3967 8.45512C19.4674 8.52583 19.5214 8.6044 19.5587 8.69082C19.5961 8.77724 19.6147 8.86956 19.6147 8.96777V15.2728C19.6147 15.4889 19.5435 15.6632 19.4011 15.7958C19.2587 15.9284 19.0818 15.997 18.8705 16.0017C18.6497 15.997 18.4673 15.9226 18.3232 15.7785C18.1792 15.6346 18.1089 15.4562 18.1121 15.2433L18.1121 10.7945Z"
+                      fill="#EE585A"
+                    />
+                  </svg>
+                </button>
+              </article>
+              <article class="support-text support-middle_text">
+                <div class="support-text-wrapper">
+                  <div class="support-text_header">
+                    <h3>Веб-безопасность через </br> Auth Proxy</h3>
+                  </div>
+                  <div class="support-text_content">
+                    <p>Поскольку PWA-приложения работают в веб-среде, безопасность критически важна.
+<b>ITBuild</b> предлагает <b>Auth Proxy</b> как базовый модуль для решения всех задач веб-безопасности.</p>
+                    <ul class="list">
+                      <li class="list-item">
+                        Используется как базовый уровень в каждом проекте на платформе
+                      </li>
+                      <li class="list-item">
+                        Обеспечивает соответствие вашего приложения современным стандартам веб-безопасности
+                      </li>
+                      <li class="list-item">
+                        Постоянно обновляется для максимальной защиты
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button id="visit-auth-web" class="arrow-button">
+                  Посетить сайт Auth Proxy
+                  <svg
+                    class="arrow-button_icon"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="28"
+                      height="28"
+                      rx="14"
+                      fill="#1F1F1F"
+                      fill-opacity="0.05"
+                    />
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="27"
+                      height="27"
+                      rx="13.5"
+                      stroke="#1F1F1F"
+                      stroke-opacity="0.3"
+                    />
+                    <path
+                      d="M18.1121 10.7945L9.36167 19.5449C9.21141 19.6952 9.03493 19.7706 8.83223 19.7712C8.62952 19.7718 8.45348 19.6974 8.30411 19.548C8.15473 19.3986 8.0793 19.2216 8.07783 19.0168C8.07636 18.812 8.15075 18.6345 8.30101 18.4842L17.0515 9.7338L12.5663 9.73292C12.3548 9.73351 12.1778 9.6626 12.0354 9.5202C11.893 9.37779 11.8218 9.19856 11.8218 8.9825C11.8218 8.76644 11.893 8.58721 12.0354 8.4448C12.1778 8.3024 12.3571 8.2312 12.5731 8.2312L18.8782 8.2312C18.9803 8.23513 19.0746 8.25575 19.161 8.29307C19.2474 8.33039 19.326 8.38441 19.3967 8.45512C19.4674 8.52583 19.5214 8.6044 19.5587 8.69082C19.5961 8.77724 19.6147 8.86956 19.6147 8.96777V15.2728C19.6147 15.4889 19.5435 15.6632 19.4011 15.7958C19.2587 15.9284 19.0818 15.997 18.8705 16.0017C18.6497 15.997 18.4673 15.9226 18.3232 15.7785C18.1792 15.6346 18.1089 15.4562 18.1121 15.2433L18.1121 10.7945Z"
+                      fill="#EE585A"
+                    />
+                  </svg>
+                </button>
+              </article>
+              <article class="support-text support-middle_text">
+                <div class="support-text-wrapper">
+                  <div class="support-text_header">
+                    <h3>Встроенная инфраструктура </br> для разработки</h3>
+                  </div>
+                  <div class="support-text_content">
+                    <p>Платформа включает собственную защищённую серверную инфраструктуру.
+Мы предоставляем каждой проектной команде <b>бесплатные серверные ресурсы на первые 60 дней разработки</b> — включая:</p>
+                    <ul class="list">
+                      <li class="list-item">
+                        Среды разработки
+                      </li>
+                      <li class="list-item">
+                        Привязку доменов
+                      </li>
+                      <li class="list-item">
+                        Интеграцию CI/CD
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="support-bottom">
+              <article class="support-center support-bottom_center">
+                <button class="arrow-button arrow-button--brand">
+                   Связаться с нашей командой
+                  <svg
+                    class="arrow-button_icon"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="28"
+                      height="28"
+                      rx="14"
+                      fill="#1F1F1F"
+                      fill-opacity="0.05"
+                    />
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="27"
+                      height="27"
+                      rx="13.5"
+                      stroke="#1F1F1F"
+                      stroke-opacity="0.3"
+                    />
+                    <path
+                      d="M18.1121 10.7945L9.36167 19.5449C9.21141 19.6952 9.03493 19.7706 8.83223 19.7712C8.62952 19.7718 8.45348 19.6974 8.30411 19.548C8.15473 19.3986 8.0793 19.2216 8.07783 19.0168C8.07636 18.812 8.15075 18.6345 8.30101 18.4842L17.0515 9.7338L12.5663 9.73292C12.3548 9.73351 12.1778 9.6626 12.0354 9.5202C11.893 9.37779 11.8218 9.19856 11.8218 8.9825C11.8218 8.76644 11.893 8.58721 12.0354 8.4448C12.1778 8.3024 12.3571 8.2312 12.5731 8.2312L18.8782 8.2312C18.9803 8.23513 19.0746 8.25575 19.161 8.29307C19.2474 8.33039 19.326 8.38441 19.3967 8.45512C19.4674 8.52583 19.5214 8.6044 19.5587 8.69082C19.5961 8.77724 19.6147 8.86956 19.6147 8.96777V15.2728C19.6147 15.4889 19.5435 15.6632 19.4011 15.7958C19.2587 15.9284 19.0818 15.997 18.8705 16.0017C18.6497 15.997 18.4673 15.9226 18.3232 15.7785C18.1792 15.6346 18.1089 15.4562 18.1121 15.2433L18.1121 10.7945Z"
+                      fill="#EE585A"
+                    />
+                  </svg>
+                </button>
+              </article>
+              <article class="support-text support-bottom_text">
+                <div class="support-text-wrapper">
+                  <div class="support-text_header">
+                    <h3>Уведомление о ёмкости серверов</h3>
+                  </div>
+                  <div class="support-text_content">
+                    <p>Из-за текущих ограничений серверов <b>количество активных проектов на платформе временно ограничено.</b></p>
+                    <p>Мы активно масштабируем нашу инфраструктуру.</p>
+                    <p>🔔 Пожалуйста, <b>согласуйте доступность с менеджером</b> перед запуском нового проекта.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Support End -->
+      <!-- Customer-End Start -->
+      <div class="section">
+        <div class="section_wrapper section_wrapper--footer">
+          <button class="brand-button">Начать проект</button>
+        </div>
+      </div>
+      <!-- Customer-End End -->
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <svg
+            width="24"
+            height="27"
+            viewBox="0 0 24 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 0L0 24L0 26.4H2.4L21.6 26.4H24V24L24 9.6V7.2H21.6L12 7.2H9.6V9.6L9.6 16.8L14.4 16.8L14.4 12L19.2 12V21.6L4.8 21.6L4.8 0L0 0Z"
+              fill="white"
+            />
+            <path d="M9.6001 4.8V0L14.4001 0V4.8L9.6001 4.8Z" fill="#EE585A" />
+          </svg>
+          <p>IT BUILD GROUP</p>
+        </div>
+
+        <div class="footer-columns">
+          <!-- Column: Contact -->
+          <div class="footer-columns_item first-column">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/contact"
+                  >Контакты</a
+                >
+              </li>
+              <li><a href="/email">Email: info@itbuildgroup.com</a></li>
+              <li><a href="/phone">Phone: +1 (000) 123-4567</a></li>
+              <li><a href="/live-chat">Чат с экспертами</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Menu -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/ru/"
+                  >Меню</a
+                >
+              </li>
+              <li><a href="/ru/#features">Возможности</a></li>
+              <li><a href="/ru/#solutions">Решения</a></li>
+              <li><a href="/ru/#use_cases">Сценарии использования</a></li>
+              <li><a href="/ru/#company">Компания</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Customers -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#benefits">Ключевые преимущества</a>
+              </li>
+              <li>
+                <a href="#points">Проблемы</a>
+              </li>
+              <li>
+                <a href="#how-it-works">Как это работает</a>
+              </li>
+              <li>
+                <a href="#support">Поддержка</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column: Specialists -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a
+                  class="footer-columns_item-title"
+                  href="/ru/specialists"
+                  >Специалисты</a
+                >
+              </li>
+              <li>
+                <a href="/ru/specialists#key-benefits"
+                  >Ключевые преимущества</a
+                >
+              </li>
+              <li><a href="/ru/specialists#points">Проблемы</a></li>
+              <li>
+                <a href="/ru/specialists#support">Поддержка</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column: Agents & Experts -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/ru/expert"
+                  >Для агентов и экспертов</a
+                >
+              </li>
+              <li>
+                <a href="/ru/expert#benefits">Ключевые преимущества</a>
+              </li>
+              <li>
+                <a href="/ru/expert#business-model"
+                  >Бизнес-модель</a
+                >
+              </li>
+              <li><a href="/ru/expert#support">Поддержка</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Follow -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/follow"
+                  >Социальные сети</a
+                >
+              </li>
+              <li><a href="/telegram">Telegram</a></li>
+              <li><a href="/github">GitHub</a></li>
+              <li><a href="/linkedin">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Resources -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/resources"
+                  >Ресурсы</a
+                >
+              </li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/documentation">Документация</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Legal -->
+          <div class="footer-columns_item">
+            <ul>
+              <li>
+                <a class="footer-columns_item-title" href="/legal">Legal</a>
+              </li>
+              <li><a href="/privacy-policy">Политика конфиденциальности</a></li>
+              <li><a href="/terms-of-use">Условия использования</a></li>
+              <li><a href="/legal-notice">Правовая информация</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 ITBuild. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="/assets/js/preload.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

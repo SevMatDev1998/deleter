@@ -1,0 +1,373 @@
+@use "../utils/functions" as *;
+@use "../utils/mixin" as *;
+
+*,
+html,
+body {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 600;
+}
+
+button {
+  font-size: spacing(8);
+  font-family: var(--font-roboto), sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.list {
+  list-style: none;
+  margin-left: spacing(5);
+
+  &-item {
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+    line-height: spacing(12);
+    position: relative;
+    margin-bottom: spacing(6);
+    padding-left: spacing(7.5);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.8em;
+      color: var(--text-dark);
+    }
+
+    @include md {
+      margin-bottom: spacing(8);
+    }
+  }
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.main {
+  width: 100%;
+  transition: var(--base-transition);
+  overflow: hidden;
+
+  @include md {
+    max-width: var(--section-width);
+    padding-inline: 0;
+  }
+}
+
+.section {
+  position: relative;
+  scroll-margin-top: spacing(40);
+  padding-bottom: spacing(48);
+  transition: var(--base-transition);
+  overflow: visible;
+
+  @include md {
+    padding-block: spacing(16);
+  }
+
+  &--hero {
+    margin-top: spacing(40);
+    opacity: 1;
+    transform: translateY(0);
+    padding-block: spacing(48);
+
+    @include md {
+      padding: 16px;
+    }
+
+    & > .hero-content {
+      max-width: calc(var(--section-width) + 120px);
+      padding-inline: spacing(30);
+      margin-inline: auto;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &_wrapper {
+    &--base, &--footer {
+      max-width: calc(var(--section-width) + 120px);
+      padding-inline: spacing(30);
+      margin-inline: auto;
+      display: flex;
+      gap: spacing(48);
+
+      @include md {
+        gap: spacing(16);
+        padding: 32px 16px;
+      }
+    }
+
+    &--footer {
+      justify-content: center;
+
+      & > button {
+        width: fit-content;
+
+        @include xs {
+          width: 100%;
+        }
+      }
+    }
+
+    &--base {
+      flex-direction: column;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: var(--long-transition);
+
+      &.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &_title {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: spacing(12);
+    padding-left: spacing(12);
+    border-left: 2px solid var(--color-brand);
+    text-transform: uppercase;
+
+    @include md {
+      gap: spacing(8);
+    }
+
+    & > h2 {
+      font-size: spacing(8.5);
+      font-weight: 600;
+    }
+
+    &_line {
+      flex: auto;
+      height: 2px;
+      background: linear-gradient(90deg, #ee585a 0%, rgba(102, 43, 53, 0) 100%);
+    }
+  }
+
+  & > .canvas-hero {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+}
+
+.link-hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: spacing(4);
+  transition: var(--base-transition);
+  background: transparent;
+  user-select: none;
+
+  &:hover,
+  &.active {
+    background: var(--button-hover);
+    border-color: var(--border-primary);
+  }
+}
+
+.icon-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > svg {
+    color: var(--primary);
+  }
+}
+
+.brand-button {
+  flex: none;
+  width: auto;
+  color: var(--color-white);
+  background: var(--color-brand);
+  padding: spacing(5) spacing(12);
+  border: 1px solid var(--border-primary);
+  border-radius: spacing(4);
+  transition: var(--base-transition);
+
+  &:hover {
+    color: var(--color-primary);
+    background: var(--color-white);
+  }
+
+  @include md {
+    width: 100%;
+  }
+}
+
+.arrow-button {
+  width: fit-content;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: spacing(6);
+  padding: spacing(1) spacing(1) spacing(1) spacing(6);
+  background: var(--color-white);
+  border: 1px solid var(--border-primary);
+  border-radius: spacing(50);
+  font-size: spacing(7);
+  color: var(--text-dark);
+  white-space: nowrap;
+  transition: var(--base-transition);
+
+  &_icon {
+    transition: var(--base-transition);
+  }
+
+  &:hover {
+    color: var(--color-primary);
+
+    .arrow-button_icon {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.benefit-card {
+  width: 100%;
+  max-width: 468px;
+  min-height: 332px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+  linear-gradient(
+                  180deg,
+                  rgba(31, 31, 31, 0.03) 0%,
+                  rgba(240, 240, 240, 0) 100%
+  );
+
+  &_image {
+    height: 184px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: spacing(12);
+      padding-top: 12px;
+    }
+
+    &-description {
+      font-size: 16px;
+      color: #6b7280;
+      letter-spacing: 0.5px;
+      line-height: spacing(12);
+    }
+  }
+}
+
+.button-group {
+  width: 100%;
+  max-width: spacing(180);
+  height: 44px;
+  display: flex;
+  border: 1px solid var(--border-primary);
+  border-radius: spacing(4);
+  overflow: hidden;
+
+  &--brand {
+    color: var(--color-white);
+    background: var(--color-brand);
+  }
+
+  &--white {
+    color: var(--color-primary);
+    background: var(--button-hover);
+  }
+
+  &--brand,
+  &--white {
+    flex: 1 1 50%;
+    transition: var(--base-transition);
+  }
+
+  &--brand:hover,
+  &--white:hover {
+    background: var(--color-white);
+  }
+
+  &--brand:hover {
+    color: var(--color-primary);
+  }
+}

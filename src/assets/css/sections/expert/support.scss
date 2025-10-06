@@ -1,0 +1,92 @@
+@use "../../utils/mixin" as *;
+@use "../../utils/functions" as *;
+
+.support {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--rounded);
+
+  @include md {
+    flex-direction: column;
+  }
+
+  strong {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: spacing(10);
+    font-weight: 600;
+    font-family: var(--font-montserrat), sans-serif;
+  }
+
+  &-card {
+    padding: spacing(12);
+
+    &.main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: spacing(6);
+      margin: 0;
+      border-bottom: 1px solid var(--border-primary);
+    }
+
+    &.left {
+      width: 50%;
+
+      @include md {
+        width: 100%;
+      }
+    }
+
+    &.right {
+      width: 50%;
+      border-left: 1px solid var(--border-primary);
+
+      @include md {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--border-primary);
+      }
+    }
+
+    &_name {
+      padding-bottom: spacing(6);
+    }
+
+    &_text {
+      color: var(--text-dark);
+      line-height: spacing(12);
+      letter-spacing: 0.5px;
+    }
+
+    &_title {
+      display: flex;
+      align-items: center;
+      gap: spacing(12);
+      padding-bottom: spacing(12);
+
+      &-svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &_link {
+      color: var(--color-primary);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+
+  &-arrow {
+    margin-top: spacing(12);
+  }
+
+  &-button {
+    margin: 0 auto;
+  }
+}

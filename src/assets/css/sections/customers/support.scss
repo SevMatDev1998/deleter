@@ -1,0 +1,204 @@
+@use "../../utils/functions" as *;
+@use "../../utils/mixin" as *;
+
+.support {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(12);
+  }
+
+  &-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+      flex-direction: row;
+      padding: spacing(8);
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: spacing(12);
+    padding: spacing(12);
+
+    @include md {
+      padding: spacing(10);
+      gap: spacing(10);
+    }
+
+    @include sm {
+      padding: spacing(8);
+      gap: spacing(8);
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: spacing(12);
+
+      @include md {
+        gap: spacing(10);
+      }
+
+      @include sm {
+        gap: spacing(8);
+      }
+    }
+
+    &_header {
+      display: flex;
+      align-items: center;
+      gap: spacing(12);
+
+      @include md {
+        gap: spacing(10);
+      }
+
+      @include sm {
+        gap: spacing(8);
+      }
+
+      & h3 {
+        font-size: spacing(10);
+        font-weight: 600;
+      }
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: spacing(6);
+
+      @include sm {
+        gap: spacing(8);
+      }
+
+      & p {
+        color: var(--text-dark);
+      }
+
+      & b {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &-top, &-middle, &-bottom {
+    display: flex;
+    border: 1px solid var(--border-primary);
+    border-radius: var(--rounded);
+    overflow: hidden;
+
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  &-top {
+    &_text {
+      flex: 1 1 640px;
+      border-right: 1px solid var(--border-primary);
+
+      @include sm {
+        flex: none;
+        border-right: none;
+        border-bottom: 1px solid var(--border-primary);
+      }
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: spacing(6);
+
+      &_item {
+        position: relative;
+        color: var(--color-primary);
+        font-weight: 500;
+        padding-left: spacing(7.5);
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 0.8em;
+          color: var(--color-primary);
+          margin-top: spacing(1);
+        }
+      }
+    }
+
+    &_center {
+      flex: 1 1 320px;
+      gap: spacing(12);
+
+      @include sm {
+        flex: none;
+      }
+    }
+  }
+
+  &-middle {
+    &_text {
+      flex: 1 1 30%;
+
+      @include sm {
+        flex: none;
+        gap: spacing(16);
+      }
+
+      & h3 {
+        min-height: spacing(24);
+      }
+
+      &:first-of-type {
+        border-right: 1px solid var(--border-primary);
+
+        @include sm {
+          border-right: none;
+          border-bottom: 1px solid var(--border-primary);
+        }
+      }
+
+      &:last-of-type {
+        border-left: 1px solid var(--border-primary);
+
+        @include sm {
+          border-left: none;
+          border-top: 1px solid var(--border-primary);
+        }
+      }
+    }
+  }
+
+  &-bottom {
+
+    &_text {
+      flex: 1 1 640px;
+
+      @include sm {
+        flex: none;
+      }
+    }
+
+    &_center {
+      flex: 1 1 320px;
+      border-right: 1px solid var(--border-primary);
+
+      @include sm {
+        order: 2;
+        flex: none;
+        border-right: none;
+        border-top: 1px solid var(--border-primary);
+      }
+    }
+  }
+}
