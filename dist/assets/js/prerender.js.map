@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/assets/js/prerender.js"],
-  "sourcesContent": ["(() => {\n  const theme = localStorage.getItem(\"theme\");\n\n  if (theme && theme !== \"system\") {\n    document.documentElement.setAttribute('data-theme', theme);\n  } else {\n    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;\n    const theme = systemPrefersDark ? 'dark' : 'light';\n    document.documentElement.setAttribute('data-theme', theme);\n    localStorage.setItem('theme', \"system\");\n  }\n})()\n"],
-  "mappings": "OAAC,IAAM,CACL,IAAMA,EAAQ,aAAa,QAAQ,OAAO,EAE1C,GAAIA,GAASA,IAAU,SACrB,SAAS,gBAAgB,aAAa,aAAcA,CAAK,MACpD,CAEL,IAAMA,EADoB,OAAO,WAAW,8BAA8B,EAAE,QAC1C,OAAS,QAC3C,SAAS,gBAAgB,aAAa,aAAcA,CAAK,EACzD,aAAa,QAAQ,QAAS,QAAQ,CACxC,CACF,GAAG",
-  "names": ["theme"]
-}

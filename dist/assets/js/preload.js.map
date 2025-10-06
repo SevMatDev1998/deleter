@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/assets/js/preload.js"],
-  "sourcesContent": ["window.addEventListener(\"load\", () => {\n  const preloader = document.getElementById(\"preloader\");\n  const loader = document.querySelector(\"#preloader .loader\");\n  if (preloader && loader) {\n    loader.style.opacity = \"0\";\n    setTimeout(() => {\n      preloader.style.display = \"none\";\n      document.documentElement.style.overflowY = \"auto\";\n    }, 300);\n  }\n});\n"],
-  "mappings": "MAAA,OAAO,iBAAiB,OAAQ,IAAM,CACpC,IAAMA,EAAY,SAAS,eAAe,WAAW,EAC/CC,EAAS,SAAS,cAAc,oBAAoB,EACtDD,GAAaC,IACfA,EAAO,MAAM,QAAU,IACvB,WAAW,IAAM,CACfD,EAAU,MAAM,QAAU,OAC1B,SAAS,gBAAgB,MAAM,UAAY,MAC7C,EAAG,GAAG,EAEV,CAAC",
-  "names": ["preloader", "loader"]
-}
