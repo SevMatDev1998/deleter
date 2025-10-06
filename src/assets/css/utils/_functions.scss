@@ -1,9 +1,0 @@
-@use 'variables' as *;
-
-@function opacity-color($color, $opacity) {
-  @return rgba($color, $opacity);
-}
-
-@function spacing($space) {
-  @return calc(#{$base-spacing} * #{$space});
-}

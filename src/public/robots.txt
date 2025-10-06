@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://itbuild.app/
-
-# Sitemaps
-Sitemap: https://itbuild.app/sitemap.xml
